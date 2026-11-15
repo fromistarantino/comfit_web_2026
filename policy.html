@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COMFIT 운영 정책</title>
+<meta name="description" content="COMFIT(컴핏): 내 PC를 무료로 검진하고 부품별 상태를 결과표로 확인하세요.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="COMFIT 운영 정책">
+<meta property="og:description" content="COMFIT(컴핏): 내 PC를 무료로 검진하고 부품별 상태를 결과표로 확인하세요.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/ca7b12c2966f7a2a6f655d30bc6caae8.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Pretendard';src:url('assets/ca7b12c2966f7a2a6f655d30bc6caae8.woff2') format('woff2');font-weight:45 920;font-style:normal;font-display:swap}
+body{margin:0;background:#FFFFFF;color:#09090B;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;letter-spacing:-0.01em;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.8}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #18181B;outline-offset:2px}
+input::placeholder,textarea::placeholder{color:#A1A1AA}
+button:disabled{opacity:.45;cursor:not-allowed}
+.cf-hd{max-width:1200px;margin:0 auto;padding:0 24px;box-sizing:border-box;display:flex;align-items:center;gap:8px 16px;min-height:64px;flex-wrap:wrap}
+.cf-nav{display:flex;gap:24px;font-size:16px;font-weight:500;margin-left:auto}
+.cf-nav a{padding:10px 0;white-space:nowrap}
+.cf-ic{display:flex}
+@media (max-width:720px){.cf-hd{padding:8px 16px 0;gap:0 8px}.cf-ic{margin-left:auto}.cf-nav{order:3;flex-basis:100%;margin-left:0;gap:22px;font-size:15px;overflow-x:auto}.cf-top{padding:6px 16px !important}.cf-pad{padding-left:16px !important;padding-right:16px !important}}
+.cf-short{display:none}.cf-m-only{display:none !important}.cf-toc-m{display:none}
+@media (max-width:720px){.cf-long{display:none}.cf-short{display:inline}.cf-m-only{display:inline-flex !important}
+.cf-grid2{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:24px 10px !important}
+.cf-filter{display:none !important}.cf-filter.cf-open{display:flex !important}
+.cf-rownav{flex-direction:row !important;flex-wrap:nowrap !important;overflow-x:auto;gap:18px !important;align-items:center !important;white-space:nowrap;padding-bottom:6px}
+.cf-rownav > *{flex:none !important}.cf-rownav > strong,.cf-rownav > a[role=button]{font-size:17px !important}
+.cf-rownav > div{flex-direction:row !important;gap:18px !important;padding:0 !important;border:0 !important;align-items:center}
+.cf-toc-d{display:none !important}.cf-toc-m{display:block}
+footer .cf-pad{padding-top:24px !important;padding-bottom:32px !important;gap:16px !important}footer nav{gap:8px !important}
+main{padding-top:24px !important}}
+</style>
+</head>
+<body>
+<div id="app">
+<div style="display: flex; flex-direction: column; min-width: 0; font-variant-numeric: tabular-nums;">
+
+<div style="background: #18181B; color: #E4E4E7;">
+<div class="cf-top" style="max-width: 1200px; margin: 0 auto; padding: 6px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 4px 16px; min-height: 34px; flex-wrap: wrap; font-size: 12px; line-height: 1.5;">
+<span><strong style="color: #FFFFFF;">거래 준비 중</strong><span class="cf-long"> 지금은 무료 검진과 공모전을 이용할 수 있습니다. SHOP·장터·시세의 상품과 가격은 화면 예시이며 실제 판매 상품이 아닙니다.</span><span class="cf-short"> SHOP·장터·시세의 상품과 가격은 예시입니다.</span></span>
+<nav aria-label="이용 메뉴" style="display: flex; gap: 18px; color: #A1A1AA;">
+<a href="help.html">고객센터</a>
+<a href="mypage.html">마이페이지</a>
+<a href="login.html">로그인</a>
+<a href="signup.html">회원가입</a>
+</nav>
+</div>
+</div>
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #E4E4E7;">
+<div class="cf-hd">
+<a href="index.html" aria-label="COMFIT 홈" style="display: flex; align-items: center; height: 40px;"><img src="assets/a7a031b26dcac6dd076e4579f3bf8d61.svg" alt="COMFIT" style="height: 24px; width: auto; display: block;"></a>
+<nav aria-label="주 메뉴" class="cf-nav">
+<a href="index.html">HOME</a>
+<a href="diagnose.html">검진</a>
+<a href="list.html">SHOP</a>
+<a href="market.html">장터</a>
+<a href="price.html">시세</a>
+</nav>
+<div class="cf-ic">
+<a href="search.html" aria-label="검색" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></a>
+<a href="mypage.html" aria-label="마이페이지" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+</div>
+</div>
+</header>
+
+<main class="cf-pad" style="max-width: 1200px; width: 100%; margin: 0 auto; padding: 40px 24px 80px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+<aside style="flex: 1 1 200px; max-width: 100%; display: flex; flex-direction: column; gap: 28px;">
+<nav aria-label="약관 및 정책" class="cf-rownav" style="display: flex; flex-direction: column; gap: 12px; font-size: 15px;">
+<strong style="font-size: 22px; font-weight: 800; letter-spacing: -0.02em; color: #09090B;">약관 및 정책</strong>
+<a href="terms.html" style="color: #71717A;">이용약관</a>
+<a href="privacy.html" style="color: #71717A;">개인정보처리방침</a>
+<a href="policy.html" aria-current="page" style="font-weight: 800; color: #09090B;">운영 정책</a>
+<a href="programterms.html" style="color: #71717A;">검진 프로그램 이용약관</a>
+<a href="licenses.html" style="color: #71717A;">오픈소스 라이선스</a>
+</nav>
+<nav aria-label="목차" class="cf-toc-d" style="display: flex; flex-direction: column; gap: 8px;">
+<strong style="font-size: 13px; color: #71717A; font-weight: 600;">목차</strong>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 1.5;">
+<li><a href="#c1" style="color: #52525B;">1. 거래 유형과 COMFIT의 역할</a></li>
+<li><a href="#c2" style="color: #52525B;">2. 검진 서비스 정책</a></li>
+<li><a href="#c3" style="color: #52525B;">3. 판매자 정책</a></li>
+<li><a href="#c4" style="color: #52525B;">4. 배송·취소·반품·환불</a></li>
+<li><a href="#c5" style="color: #52525B;">5. 보증과 사후 지원</a></li>
+<li><a href="#c6" style="color: #52525B;">6. 신고와 분쟁 조정</a></li>
+</ol>
+</nav>
+<details class="cf-toc-m" style="border: 1px solid #E4E4E7; border-radius: 8px; padding: 0 14px;"><summary style="min-height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 700; cursor: pointer;">목차 보기 (6개 항목)</summary><div style="padding: 4px 0 14px;"><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 1.5;">
+<li><a href="#c1" style="color: #52525B;">1. 거래 유형과 COMFIT의 역할</a></li>
+<li><a href="#c2" style="color: #52525B;">2. 검진 서비스 정책</a></li>
+<li><a href="#c3" style="color: #52525B;">3. 판매자 정책</a></li>
+<li><a href="#c4" style="color: #52525B;">4. 배송·취소·반품·환불</a></li>
+<li><a href="#c5" style="color: #52525B;">5. 보증과 사후 지원</a></li>
+<li><a href="#c6" style="color: #52525B;">6. 신고와 분쟁 조정</a></li>
+</ol></div></details>
+</aside>
+<article aria-labelledby="doc-title" style="flex: 999 1 560px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 28px;">
+<div style="display: flex; flex-direction: column; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid #E4E4E7;">
+<h1 id="doc-title" style="margin: 0; font-size: 22px; font-weight: 800; line-height: 1.3; letter-spacing: -0.02em;">COMFIT 운영 정책</h1>
+<span style="font-size: 13px; color: #71717A;">시행일 [사업자 확인 필요]</span>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; border: 1px dashed #D97706; background: #FFFBEB; font-size: 13px; line-height: 1.7; color: #92400E;"><strong>작업용 · 공개 전 삭제</strong> 검토용 초안입니다. 법률 검토를 거치지 않았고 시행일이 정해지지 않았습니다. [사업자 확인 필요]는 사업자가 값을 정해 채워야 하는 자리입니다.</p>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">이용약관에서 정한 내용의 세부 기준입니다. 거래 유형별 COMFIT의 역할, 검진 서비스의 범위와 한계, 판매자가 지켜야 할 것, 환불과 보증을 정합니다.</p>
+</div>
+<section id="c1" aria-labelledby="c1-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c1-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">1. 거래 유형과 COMFIT의 역할</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">거래는 판매자가 누구인지에 따라 세 가지로 나뉘고, COMFIT의 역할과 책임도 그에 따라 달라집니다. 상품 화면과 주문 화면에 어느 유형인지 표시합니다.</p>
+<div style="border: 1px solid #E4E4E7; border-radius: 8px; overflow-x: auto;">
+<div role="table" style="min-width: 600px;">
+<div role="rowgroup"><div role="row" style="display: grid; grid-template-columns: minmax(150px, 1fr) minmax(100px, 0.7fr) minmax(220px, 1.8fr) minmax(200px, 1.6fr);"><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">유형 (화면 표시)</div><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">판매자</div><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">COMFIT의 역할</div><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">청약철회·환불</div></div></div>
+<div role="rowgroup">
+<div role="row" style="display: grid; grid-template-columns: minmax(150px, 1fr) minmax(100px, 0.7fr) minmax(220px, 1.8fr) minmax(200px, 1.6fr);"><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">직접 판매 (COMFIT 판매)</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">COMFIT</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">판매자. 상품 정보, 배송, 환불을 직접 책임집니다.</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">계약 서면 또는 상품을 받은 날부터 7일 이내 청약철회 (전자상거래법 제17조)</div></div>
+<div role="row" style="display: grid; grid-template-columns: minmax(150px, 1fr) minmax(100px, 0.7fr) minmax(220px, 1.8fr) minmax(200px, 1.6fr);"><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">사업자 판매 중개 (사업자 판매)</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">사업자 판매자</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">통신판매중개자. 판매자의 사업자 정보를 확인해 보여 주고, 결제와 분쟁 해결을 지원합니다.</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">위와 같은 기간. 판매자가 처리하고 COMFIT이 접수와 진행을 돕습니다.</div></div>
+<div role="row" style="display: grid; grid-template-columns: minmax(150px, 1fr) minmax(100px, 0.7fr) minmax(220px, 1.8fr) minmax(200px, 1.6fr);"><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">장터 (개인 판매)</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">개인</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">게시 공간 제공, 판매자 연락처 확인, 분쟁 해결 협조. 거래의 당사자가 아닙니다.</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">당사자 합의에 따릅니다. 결과표나 설명과 다르면 COMFIT에 분쟁 조정을 요청할 수 있습니다.</div></div>
+</div>
+</div>
+</div>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; background: #F4F4F5; font-size: 13px; line-height: 1.7; color: #3F3F46;">거래 서비스는 준비 중입니다. SHOP·장터·시세에 보이는 상품과 가격은 화면 예시이며, 이 정책의 거래 관련 내용은 거래 서비스를 열 때부터 적용합니다.</p>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; border: 1px dashed #D97706; background: #FFFBEB; font-size: 13px; line-height: 1.7; color: #92400E;"><strong>작업용 · 공개 전 삭제</strong> 세 가지 유형을 모두 운영한다고 확정한 것이 아닙니다. 판매자가 누구인지와 COMFIT이 당사자인지를 구분해 보여 주는 틀이며, 실제 운영하는 유형만 남기면 됩니다. 중개하는 거래에서는 당사자가 아니라는 사실을 미리 알리고(전자상거래법 제20조 제1항), 사업자 판매자의 신원정보를 청약 전에 제공해야(같은 조 제2항) 합니다.</p>
+</section>
+<section id="c2" aria-labelledby="c2-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c2-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">2. 검진 서비스 정책</h3>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px;">
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">비용: 검진 프로그램 다운로드, 검진, 결과표 발급, 검진 번호 진위 확인은 무료이며 결제 정보를 받지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">검사 환경: 이용자가 자신의 PC에서 직접 실행합니다. 기본 검진과 빠른 검진의 소요 시간은 [사업자 확인 필요]입니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">판정: 측정값을 기준과 비교해 정상, 주의, 점검 필요로 표시하고, 판정 없이 값만 보여 주는 항목은 참고, 센서를 읽지 못한 항목은 측정 불가로 표시합니다. 자세한 뜻은 <a href="guide.html" style="text-decoration: underline; text-underline-offset: 3px; color: #09090B;">검진 안내</a>에 있습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">결과표의 성격: 결과표는 검사한 시점에 그 PC 환경에서 잰 결과입니다. 이후의 고장 여부, 성능, 수명을 보증하지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">부품과 PC 전체: 부품 하나의 결과가 다른 PC에 꽂았을 때의 결과나 조립 PC 전체의 안정성을 뜻하지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">다시 검진: 횟수 제한 없이 무료로 다시 검진할 수 있고, 결과표마다 새 검진 번호가 발급됩니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">판매 등록에 쓸 수 있는 결과표의 유효 기간: 검진일부터 [사업자 확인 필요]일</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">위조·변조: 결과표나 검진 번호를 고치거나 측정을 조작하면 결과표 발급과 서비스 이용을 제한합니다.</li>
+</ul>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">검사하지 않는 것: 외관과 단자의 손상, 수리·개조·침수 이력, 정품·도난 여부, 몇 시간 이상의 장시간 안정성, 가끔만 나타나는 고장, 센서로 읽히지 않는 전원공급장치·메인보드 내부 상태, 모니터·키보드 같은 주변기기, 악성코드 등 소프트웨어 문제.</p>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; border: 1px dashed #D97706; background: #FFFBEB; font-size: 13px; line-height: 1.7; color: #92400E;"><strong>작업용 · 공개 전 삭제</strong> 부품을 COMFIT으로 보내 검사받는 입고 검수형 서비스를 운영하려면 먼저 정해야 합니다: 입고 때 상태·구성품·시리얼을 확인하고 기록하는 방법, 운송·보관·검사 중 분실·파손의 책임과 보상 한도, 불합격·재검사·반송 절차와 비용 부담, 검사 시작 전후의 취소·환불 기준. 정해지기 전에는 이 서비스를 사이트에 안내하지 않습니다.</p>
+</section>
+<section id="c3" aria-labelledby="c3-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c3-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">3. 판매자 정책</h3>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px;">
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">판매자 확인: 개인 판매자는 법령이 정한 신원정보([사업자 확인 필요: 원문 대조 후 기재])를, 사업자 판매자는 상호·대표자·주소·전화번호·통신판매업 신고번호·사업자등록번호를 확인합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">판매 등록: 판매할 부품을 꽂은 PC에서 받은 검진 번호를 입력하고, 실물 사진을 [사업자 확인 필요]장 이상 올립니다. 결과표의 부품과 보내는 부품이 같아야 합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">알려야 하는 이력: 수리, 개조, 바이오스 수정, 침수, 채굴 사용, 구성품 누락, 알고 있는 고장 증상. 알고 있는 범위에서 상품 정보에 적어야 합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">저장장치: 보내기 전에 전체 초기화해야 합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">수수료: [사업자 확인 필요]. 결제 전 주문 화면과 판매 등록 화면에 금액으로 표시합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">위반 시 조치: 사실과 다른 상품 정보, 결과표와 다른 부품 발송, 금지 품목 등록은 정도에 따라 경고, 거래 제한, 이용 정지로 조치하며, 조치 전에 사유를 알리고 소명 기회를 줍니다.</li>
+</ul>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">거래 금지 품목과 신고 절차는 <a href="help.html" style="text-decoration: underline; text-underline-offset: 3px; color: #09090B;">고객센터</a>에서 안내합니다.</p>
+</section>
+<section id="c4" aria-labelledby="c4-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c4-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">4. 배송·취소·반품·환불</h3>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px;">
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">결제 전 표시: 상품 금액, 수수료, 배송비, 총 결제 금액을 주문 화면에 보여 줍니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">발송: 판매자는 체결 후 [사업자 확인 필요]영업일 안에 보내고 송장 번호를 등록합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">주문 취소: 발송 전에는 주문 내역에서 바로 취소를 요청할 수 있습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">청약철회 (직접 판매·사업자 판매): 계약 내용에 관한 서면을 받은 날부터 7일 이내. 상품을 더 늦게 받았으면 받은 날부터 7일 이내. 상품이 표시·광고나 계약 내용과 다르면 받은 날부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">반품 배송비: 단순 변심이면 구매자가, 상품이 표시·광고나 계약 내용과 다르면 판매자가 부담합니다. 판매자는 청약철회를 이유로 위약금이나 손해배상을 청구하지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">환불: 판매자는 상품을 돌려받은 날부터 3영업일 이내에 대금을 환급하고, 늦어지면 지연이자를 더합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">청약철회가 제한되는 경우: 구매자의 책임으로 상품이 없어지거나 훼손된 경우, 사용으로 상품 가치가 뚜렷하게 떨어진 경우 등 법에서 정한 사유. 제한 사유는 상품 화면에 미리 표시해야 적용됩니다. 상태 확인을 위해 포장을 열거나 검진 프로그램으로 다시 검진한 것만으로는 제한하지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">장터: 취소와 환불은 당사자 합의에 따릅니다. 받은 상품이 결과표나 설명과 다르면 분쟁 조정을 요청할 수 있습니다.</li>
+</ul>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">접수 방법: 주문 내역에서 취소 또는 반품·환불을 신청하면 접수 번호가 발급되고, 같은 화면에서 진행 상태를 볼 수 있습니다.</p>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; border: 1px dashed #D97706; background: #FFFBEB; font-size: 13px; line-height: 1.7; color: #92400E;"><strong>작업용 · 공개 전 삭제</strong> 청약철회 기간·제한 사유·반품 비용·환급 기한은 법제처 찾기 쉬운 생활법령정보(2026.10.15 기준)와 공정위 전자상거래법 안내로 대조했습니다. 같은 자료에 이 법의 개정 사항이 2027.1.21 시행 예정이라고 적혀 있어, 거래를 열기 전에 다시 확인해야 합니다. 다시 검진한 것을 제한 사유로 보지 않는다는 문장은 사업자가 정하는 정책입니다.</p>
+</section>
+<section id="c5" aria-labelledby="c5-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c5-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">5. 보증과 사후 지원</h3>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px;">
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">법에서 보장하는 권리(청약철회, 계약 내용과 다른 상품에 대한 권리)는 보증과 별개로 언제나 적용됩니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">결과표는 보증서가 아닙니다. 판정이 "정상"이어도 이후의 고장에 대한 보상을 뜻하지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">COMFIT 직접 판매 상품의 보증: 기간 [사업자 확인 필요], 대상 [사업자 확인 필요], 제외 사유 [사업자 확인 필요]</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">사업자 판매 상품의 보증: 판매자가 상품 화면에 기간과 범위를 표시합니다. 표시가 없으면 판매자 보증은 없으며, 법에서 보장하는 권리는 그대로입니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">제조사 보증: 남은 기간은 참고 정보이며, 중고 거래에서 승계되는지는 제조사 정책에 따릅니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">접수: 주문 내역에서 보증 접수를 선택하고 증상과 다시 검진한 검진 번호를 함께 보내면 안내해 드립니다.</li>
+</ul>
+</section>
+<section id="c6" aria-labelledby="c6-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c6-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">6. 신고와 분쟁 조정</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">신고 방법, 처리 절차, 판매자 정보 제공 기준, 외부 분쟁조정기관은 <a href="help.html" style="text-decoration: underline; text-underline-offset: 3px; color: #09090B;">고객센터의 신고·분쟁 조정</a>에서 안내합니다. 접수는 <a href="inquiry.html" style="text-decoration: underline; text-underline-offset: 3px; color: #09090B;">1:1 문의</a>로도 할 수 있습니다.</p>
+</section>
+<section aria-labelledby="hist-h" style="display: flex; flex-direction: column; gap: 10px;">
+<h3 id="hist-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">변경 이력</h3>
+<div style="border: 1px solid #E4E4E7; border-radius: 8px; overflow-x: auto;">
+<div role="table" style="min-width: 520px;">
+<div role="rowgroup"><div role="row" style="display: grid; grid-template-columns: minmax(70px, 0.5fr) minmax(140px, 1fr) minmax(200px, 2fr);"><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">버전</div><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">시행일</div><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">변경 내용</div></div></div>
+<div role="rowgroup">
+<div role="row" style="display: grid; grid-template-columns: minmax(70px, 0.5fr) minmax(140px, 1fr) minmax(200px, 2fr);"><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">1.0</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">[사업자 확인 필요]</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">제정</div></div>
+</div>
+</div>
+</div>
+</section>
+</article>
+</main>
+
+<footer style="border-top: 1px solid #E4E4E7;">
+<div class="cf-pad" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 56px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 28px 64px;">
+<img src="assets/fb95a1db5f613153e6ceedd8102dc5ae.svg" alt="COMFIT" style="height: 18px; width: auto; align-self: flex-start;">
+<nav aria-label="이용 안내" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #52525B;">
+<strong style="font-size: 15px; color: #09090B;">이용 안내</strong>
+<a href="guide.html">서비스 소개·검진 안내</a>
+<a href="policy.html">운영 정책</a>
+<a href="event.html">공모전 요강</a>
+<a href="download.html">프로그램 다운로드</a>
+</nav>
+<nav aria-label="고객 지원" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #52525B;">
+<strong style="font-size: 15px; color: #09090B;">고객지원</strong>
+<a href="notice.html">공지사항</a>
+<a href="help.html">자주 묻는 질문</a>
+<a href="inquiry.html">1:1 문의</a>
+</nav>
+</div>
+<div style="border-top: 1px solid #E4E4E7; padding-top: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #71717A;">
+<div style="display: flex; gap: 8px 16px; flex-wrap: wrap; font-size: 13px; color: #3F3F46;">
+<a href="terms.html">이용약관</a>
+<a href="privacy.html" style="font-weight: 700; color: #09090B;">개인정보처리방침</a>
+<a href="programterms.html">검진 프로그램 이용약관</a>
+<a href="licenses.html">오픈소스 라이선스</a>
+</div>
+<span>상호 [사업자 확인 필요] · 대표 [사업자 확인 필요] · 사업자등록번호 [사업자 확인 필요] <a href="help.html" style="text-decoration: underline;">사업자정보 확인</a></span>
+<span>통신판매업 신고번호 [사업자 확인 필요] · 사업장 주소 [사업자 확인 필요]</span>
+<span>고객센터 [사업자 확인 필요] · 이메일 [사업자 확인 필요] · 운영 시간 [사업자 확인 필요] · 호스팅 제공자 [사업자 확인 필요]</span>
+<span style="margin-top: 8px; font-size: 13px; color: #3F3F46;">COMFIT이 직접 판매하는 상품을 제외하고, COMFIT은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 판매자가 등록한 상품 정보와 거래에 대한 책임은 각 판매자에게 있습니다.</span>
+<span>결과표는 검사 시점의 측정 결과이며 부품의 성능이나 수명을 보증하지 않습니다.</span>
+</div>
+</div>
+</footer>
+
+</div>
+</div>
+<template id="dc">
+<div style="display: flex; flex-direction: column; min-width: 0; font-variant-numeric: tabular-nums;">
+
+<div style="background: #18181B; color: #E4E4E7;">
+<div class="cf-top" style="max-width: 1200px; margin: 0 auto; padding: 6px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 4px 16px; min-height: 34px; flex-wrap: wrap; font-size: 12px; line-height: 1.5;">
+<span><strong style="color: #FFFFFF;">거래 준비 중</strong><span class="cf-long"> 지금은 무료 검진과 공모전을 이용할 수 있습니다. SHOP·장터·시세의 상품과 가격은 화면 예시이며 실제 판매 상품이 아닙니다.</span><span class="cf-short"> SHOP·장터·시세의 상품과 가격은 예시입니다.</span></span>
+<nav aria-label="이용 메뉴" style="display: flex; gap: 18px; color: #A1A1AA;">
+<a href="help.html">고객센터</a>
+<a href="mypage.html">마이페이지</a>
+<a href="login.html">로그인</a>
+<a href="signup.html">회원가입</a>
+</nav>
+</div>
+</div>
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #E4E4E7;">
+<div class="cf-hd">
+<a href="index.html" aria-label="COMFIT 홈" style="display: flex; align-items: center; height: 40px;"><img src="assets/a7a031b26dcac6dd076e4579f3bf8d61.svg" alt="COMFIT" style="height: 24px; width: auto; display: block;"></a>
+<nav aria-label="주 메뉴" class="cf-nav">
+<a href="index.html">HOME</a>
+<a href="diagnose.html">검진</a>
+<a href="list.html">SHOP</a>
+<a href="market.html">장터</a>
+<a href="price.html">시세</a>
+</nav>
+<div class="cf-ic">
+<a href="search.html" aria-label="검색" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></a>
+<a href="mypage.html" aria-label="마이페이지" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+</div>
+</div>
+</header>
+
+<main class="cf-pad" style="max-width: 1200px; width: 100%; margin: 0 auto; padding: 40px 24px 80px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+<aside style="flex: 1 1 200px; max-width: 100%; display: flex; flex-direction: column; gap: 28px;">
+<nav aria-label="약관 및 정책" class="cf-rownav" style="display: flex; flex-direction: column; gap: 12px; font-size: 15px;">
+<strong style="font-size: 22px; font-weight: 800; letter-spacing: -0.02em; color: #09090B;">약관 및 정책</strong>
+<a href="terms.html" style="color: #71717A;">이용약관</a>
+<a href="privacy.html" style="color: #71717A;">개인정보처리방침</a>
+<a href="policy.html" aria-current="page" style="font-weight: 800; color: #09090B;">운영 정책</a>
+<a href="programterms.html" style="color: #71717A;">검진 프로그램 이용약관</a>
+<a href="licenses.html" style="color: #71717A;">오픈소스 라이선스</a>
+</nav>
+<nav aria-label="목차" class="cf-toc-d" style="display: flex; flex-direction: column; gap: 8px;">
+<strong style="font-size: 13px; color: #71717A; font-weight: 600;">목차</strong>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 1.5;">
+<li><a href="#c1" style="color: #52525B;">1. 거래 유형과 COMFIT의 역할</a></li>
+<li><a href="#c2" style="color: #52525B;">2. 검진 서비스 정책</a></li>
+<li><a href="#c3" style="color: #52525B;">3. 판매자 정책</a></li>
+<li><a href="#c4" style="color: #52525B;">4. 배송·취소·반품·환불</a></li>
+<li><a href="#c5" style="color: #52525B;">5. 보증과 사후 지원</a></li>
+<li><a href="#c6" style="color: #52525B;">6. 신고와 분쟁 조정</a></li>
+</ol>
+</nav>
+<details class="cf-toc-m" style="border: 1px solid #E4E4E7; border-radius: 8px; padding: 0 14px;"><summary style="min-height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 700; cursor: pointer;">목차 보기 (6개 항목)</summary><div style="padding: 4px 0 14px;"><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 1.5;">
+<li><a href="#c1" style="color: #52525B;">1. 거래 유형과 COMFIT의 역할</a></li>
+<li><a href="#c2" style="color: #52525B;">2. 검진 서비스 정책</a></li>
+<li><a href="#c3" style="color: #52525B;">3. 판매자 정책</a></li>
+<li><a href="#c4" style="color: #52525B;">4. 배송·취소·반품·환불</a></li>
+<li><a href="#c5" style="color: #52525B;">5. 보증과 사후 지원</a></li>
+<li><a href="#c6" style="color: #52525B;">6. 신고와 분쟁 조정</a></li>
+</ol></div></details>
+</aside>
+<article aria-labelledby="doc-title" style="flex: 999 1 560px; min-width: 0; max-width: 780px; display: flex; flex-direction: column; gap: 28px;">
+<div style="display: flex; flex-direction: column; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid #E4E4E7;">
+<h1 id="doc-title" style="margin: 0; font-size: 22px; font-weight: 800; line-height: 1.3; letter-spacing: -0.02em;">COMFIT 운영 정책</h1>
+<span style="font-size: 13px; color: #71717A;">시행일 [사업자 확인 필요]</span>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; border: 1px dashed #D97706; background: #FFFBEB; font-size: 13px; line-height: 1.7; color: #92400E;"><strong>작업용 · 공개 전 삭제</strong> 검토용 초안입니다. 법률 검토를 거치지 않았고 시행일이 정해지지 않았습니다. [사업자 확인 필요]는 사업자가 값을 정해 채워야 하는 자리입니다.</p>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">이용약관에서 정한 내용의 세부 기준입니다. 거래 유형별 COMFIT의 역할, 검진 서비스의 범위와 한계, 판매자가 지켜야 할 것, 환불과 보증을 정합니다.</p>
+</div>
+<section id="c1" aria-labelledby="c1-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c1-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">1. 거래 유형과 COMFIT의 역할</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">거래는 판매자가 누구인지에 따라 세 가지로 나뉘고, COMFIT의 역할과 책임도 그에 따라 달라집니다. 상품 화면과 주문 화면에 어느 유형인지 표시합니다.</p>
+<div style="border: 1px solid #E4E4E7; border-radius: 8px; overflow-x: auto;">
+<div role="table" style="min-width: 600px;">
+<div role="rowgroup"><div role="row" style="display: grid; grid-template-columns: minmax(150px, 1fr) minmax(100px, 0.7fr) minmax(220px, 1.8fr) minmax(200px, 1.6fr);"><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">유형 (화면 표시)</div><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">판매자</div><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">COMFIT의 역할</div><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">청약철회·환불</div></div></div>
+<div role="rowgroup">
+<div role="row" style="display: grid; grid-template-columns: minmax(150px, 1fr) minmax(100px, 0.7fr) minmax(220px, 1.8fr) minmax(200px, 1.6fr);"><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">직접 판매 (COMFIT 판매)</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">COMFIT</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">판매자. 상품 정보, 배송, 환불을 직접 책임집니다.</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">계약 서면 또는 상품을 받은 날부터 7일 이내 청약철회 (전자상거래법 제17조)</div></div>
+<div role="row" style="display: grid; grid-template-columns: minmax(150px, 1fr) minmax(100px, 0.7fr) minmax(220px, 1.8fr) minmax(200px, 1.6fr);"><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">사업자 판매 중개 (사업자 판매)</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">사업자 판매자</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">통신판매중개자. 판매자의 사업자 정보를 확인해 보여 주고, 결제와 분쟁 해결을 지원합니다.</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">위와 같은 기간. 판매자가 처리하고 COMFIT이 접수와 진행을 돕습니다.</div></div>
+<div role="row" style="display: grid; grid-template-columns: minmax(150px, 1fr) minmax(100px, 0.7fr) minmax(220px, 1.8fr) minmax(200px, 1.6fr);"><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">장터 (개인 판매)</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">개인</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">게시 공간 제공, 판매자 연락처 확인, 분쟁 해결 협조. 거래의 당사자가 아닙니다.</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">당사자 합의에 따릅니다. 결과표나 설명과 다르면 COMFIT에 분쟁 조정을 요청할 수 있습니다.</div></div>
+</div>
+</div>
+</div>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; background: #F4F4F5; font-size: 13px; line-height: 1.7; color: #3F3F46;">거래 서비스는 준비 중입니다. SHOP·장터·시세에 보이는 상품과 가격은 화면 예시이며, 이 정책의 거래 관련 내용은 거래 서비스를 열 때부터 적용합니다.</p>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; border: 1px dashed #D97706; background: #FFFBEB; font-size: 13px; line-height: 1.7; color: #92400E;"><strong>작업용 · 공개 전 삭제</strong> 세 가지 유형을 모두 운영한다고 확정한 것이 아닙니다. 판매자가 누구인지와 COMFIT이 당사자인지를 구분해 보여 주는 틀이며, 실제 운영하는 유형만 남기면 됩니다. 중개하는 거래에서는 당사자가 아니라는 사실을 미리 알리고(전자상거래법 제20조 제1항), 사업자 판매자의 신원정보를 청약 전에 제공해야(같은 조 제2항) 합니다.</p>
+</section>
+<section id="c2" aria-labelledby="c2-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c2-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">2. 검진 서비스 정책</h3>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px;">
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">비용: 검진 프로그램 다운로드, 검진, 결과표 발급, 검진 번호 진위 확인은 무료이며 결제 정보를 받지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">검사 환경: 이용자가 자신의 PC에서 직접 실행합니다. 기본 검진과 빠른 검진의 소요 시간은 [사업자 확인 필요]입니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">판정: 측정값을 기준과 비교해 정상, 주의, 점검 필요로 표시하고, 판정 없이 값만 보여 주는 항목은 참고, 센서를 읽지 못한 항목은 측정 불가로 표시합니다. 자세한 뜻은 <a href="guide.html" style="text-decoration: underline; text-underline-offset: 3px; color: #09090B;">검진 안내</a>에 있습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">결과표의 성격: 결과표는 검사한 시점에 그 PC 환경에서 잰 결과입니다. 이후의 고장 여부, 성능, 수명을 보증하지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">부품과 PC 전체: 부품 하나의 결과가 다른 PC에 꽂았을 때의 결과나 조립 PC 전체의 안정성을 뜻하지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">다시 검진: 횟수 제한 없이 무료로 다시 검진할 수 있고, 결과표마다 새 검진 번호가 발급됩니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">판매 등록에 쓸 수 있는 결과표의 유효 기간: 검진일부터 [사업자 확인 필요]일</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">위조·변조: 결과표나 검진 번호를 고치거나 측정을 조작하면 결과표 발급과 서비스 이용을 제한합니다.</li>
+</ul>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">검사하지 않는 것: 외관과 단자의 손상, 수리·개조·침수 이력, 정품·도난 여부, 몇 시간 이상의 장시간 안정성, 가끔만 나타나는 고장, 센서로 읽히지 않는 전원공급장치·메인보드 내부 상태, 모니터·키보드 같은 주변기기, 악성코드 등 소프트웨어 문제.</p>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; border: 1px dashed #D97706; background: #FFFBEB; font-size: 13px; line-height: 1.7; color: #92400E;"><strong>작업용 · 공개 전 삭제</strong> 부품을 COMFIT으로 보내 검사받는 입고 검수형 서비스를 운영하려면 먼저 정해야 합니다: 입고 때 상태·구성품·시리얼을 확인하고 기록하는 방법, 운송·보관·검사 중 분실·파손의 책임과 보상 한도, 불합격·재검사·반송 절차와 비용 부담, 검사 시작 전후의 취소·환불 기준. 정해지기 전에는 이 서비스를 사이트에 안내하지 않습니다.</p>
+</section>
+<section id="c3" aria-labelledby="c3-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c3-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">3. 판매자 정책</h3>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px;">
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">판매자 확인: 개인 판매자는 법령이 정한 신원정보([사업자 확인 필요: 원문 대조 후 기재])를, 사업자 판매자는 상호·대표자·주소·전화번호·통신판매업 신고번호·사업자등록번호를 확인합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">판매 등록: 판매할 부품을 꽂은 PC에서 받은 검진 번호를 입력하고, 실물 사진을 [사업자 확인 필요]장 이상 올립니다. 결과표의 부품과 보내는 부품이 같아야 합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">알려야 하는 이력: 수리, 개조, 바이오스 수정, 침수, 채굴 사용, 구성품 누락, 알고 있는 고장 증상. 알고 있는 범위에서 상품 정보에 적어야 합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">저장장치: 보내기 전에 전체 초기화해야 합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">수수료: [사업자 확인 필요]. 결제 전 주문 화면과 판매 등록 화면에 금액으로 표시합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">위반 시 조치: 사실과 다른 상품 정보, 결과표와 다른 부품 발송, 금지 품목 등록은 정도에 따라 경고, 거래 제한, 이용 정지로 조치하며, 조치 전에 사유를 알리고 소명 기회를 줍니다.</li>
+</ul>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">거래 금지 품목과 신고 절차는 <a href="help.html" style="text-decoration: underline; text-underline-offset: 3px; color: #09090B;">고객센터</a>에서 안내합니다.</p>
+</section>
+<section id="c4" aria-labelledby="c4-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c4-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">4. 배송·취소·반품·환불</h3>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px;">
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">결제 전 표시: 상품 금액, 수수료, 배송비, 총 결제 금액을 주문 화면에 보여 줍니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">발송: 판매자는 체결 후 [사업자 확인 필요]영업일 안에 보내고 송장 번호를 등록합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">주문 취소: 발송 전에는 주문 내역에서 바로 취소를 요청할 수 있습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">청약철회 (직접 판매·사업자 판매): 계약 내용에 관한 서면을 받은 날부터 7일 이내. 상품을 더 늦게 받았으면 받은 날부터 7일 이내. 상품이 표시·광고나 계약 내용과 다르면 받은 날부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">반품 배송비: 단순 변심이면 구매자가, 상품이 표시·광고나 계약 내용과 다르면 판매자가 부담합니다. 판매자는 청약철회를 이유로 위약금이나 손해배상을 청구하지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">환불: 판매자는 상품을 돌려받은 날부터 3영업일 이내에 대금을 환급하고, 늦어지면 지연이자를 더합니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">청약철회가 제한되는 경우: 구매자의 책임으로 상품이 없어지거나 훼손된 경우, 사용으로 상품 가치가 뚜렷하게 떨어진 경우 등 법에서 정한 사유. 제한 사유는 상품 화면에 미리 표시해야 적용됩니다. 상태 확인을 위해 포장을 열거나 검진 프로그램으로 다시 검진한 것만으로는 제한하지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">장터: 취소와 환불은 당사자 합의에 따릅니다. 받은 상품이 결과표나 설명과 다르면 분쟁 조정을 요청할 수 있습니다.</li>
+</ul>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">접수 방법: 주문 내역에서 취소 또는 반품·환불을 신청하면 접수 번호가 발급되고, 같은 화면에서 진행 상태를 볼 수 있습니다.</p>
+<p style="margin: 0; padding: 12px 14px; border-radius: 8px; border: 1px dashed #D97706; background: #FFFBEB; font-size: 13px; line-height: 1.7; color: #92400E;"><strong>작업용 · 공개 전 삭제</strong> 청약철회 기간·제한 사유·반품 비용·환급 기한은 법제처 찾기 쉬운 생활법령정보(2026.10.15 기준)와 공정위 전자상거래법 안내로 대조했습니다. 같은 자료에 이 법의 개정 사항이 2027.1.21 시행 예정이라고 적혀 있어, 거래를 열기 전에 다시 확인해야 합니다. 다시 검진한 것을 제한 사유로 보지 않는다는 문장은 사업자가 정하는 정책입니다.</p>
+</section>
+<section id="c5" aria-labelledby="c5-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c5-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">5. 보증과 사후 지원</h3>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px;">
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">법에서 보장하는 권리(청약철회, 계약 내용과 다른 상품에 대한 권리)는 보증과 별개로 언제나 적용됩니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">결과표는 보증서가 아닙니다. 판정이 "정상"이어도 이후의 고장에 대한 보상을 뜻하지 않습니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">COMFIT 직접 판매 상품의 보증: 기간 [사업자 확인 필요], 대상 [사업자 확인 필요], 제외 사유 [사업자 확인 필요]</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">사업자 판매 상품의 보증: 판매자가 상품 화면에 기간과 범위를 표시합니다. 표시가 없으면 판매자 보증은 없으며, 법에서 보장하는 권리는 그대로입니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">제조사 보증: 남은 기간은 참고 정보이며, 중고 거래에서 승계되는지는 제조사 정책에 따릅니다.</li>
+<li style="font-size: 14px; line-height: 1.85; color: #3F3F46;">접수: 주문 내역에서 보증 접수를 선택하고 증상과 다시 검진한 검진 번호를 함께 보내면 안내해 드립니다.</li>
+</ul>
+</section>
+<section id="c6" aria-labelledby="c6-h" style="display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px;">
+<h3 id="c6-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">6. 신고와 분쟁 조정</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.85; color: #3F3F46;">신고 방법, 처리 절차, 판매자 정보 제공 기준, 외부 분쟁조정기관은 <a href="help.html" style="text-decoration: underline; text-underline-offset: 3px; color: #09090B;">고객센터의 신고·분쟁 조정</a>에서 안내합니다. 접수는 <a href="inquiry.html" style="text-decoration: underline; text-underline-offset: 3px; color: #09090B;">1:1 문의</a>로도 할 수 있습니다.</p>
+</section>
+<section aria-labelledby="hist-h" style="display: flex; flex-direction: column; gap: 10px;">
+<h3 id="hist-h" style="margin: 0; font-size: 15px; font-weight: 800; line-height: 1.4;">변경 이력</h3>
+<div style="border: 1px solid #E4E4E7; border-radius: 8px; overflow-x: auto;">
+<div role="table" style="min-width: 520px;">
+<div role="rowgroup"><div role="row" style="display: grid; grid-template-columns: minmax(70px, 0.5fr) minmax(140px, 1fr) minmax(200px, 2fr);"><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">버전</div><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">시행일</div><div role="columnheader" style="padding: 10px 12px; font-size: 13px; font-weight: 700; background: #FAFAFA; border-bottom: 1px solid #E4E4E7;">변경 내용</div></div></div>
+<div role="rowgroup">
+<div role="row" style="display: grid; grid-template-columns: minmax(70px, 0.5fr) minmax(140px, 1fr) minmax(200px, 2fr);"><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">1.0</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">[사업자 확인 필요]</div><div role="cell" style="padding: 10px 12px; font-size: 13px; line-height: 1.7; color: #3F3F46; border-bottom: 1px solid #F4F4F5;">제정</div></div>
+</div>
+</div>
+</div>
+</section>
+</article>
+</main>
+
+<footer style="border-top: 1px solid #E4E4E7;">
+<div class="cf-pad" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 56px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 28px 64px;">
+<img src="assets/fb95a1db5f613153e6ceedd8102dc5ae.svg" alt="COMFIT" style="height: 18px; width: auto; align-self: flex-start;">
+<nav aria-label="이용 안내" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #52525B;">
+<strong style="font-size: 15px; color: #09090B;">이용 안내</strong>
+<a href="guide.html">서비스 소개·검진 안내</a>
+<a href="policy.html">운영 정책</a>
+<a href="event.html">공모전 요강</a>
+<a href="download.html">프로그램 다운로드</a>
+</nav>
+<nav aria-label="고객 지원" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #52525B;">
+<strong style="font-size: 15px; color: #09090B;">고객지원</strong>
+<a href="notice.html">공지사항</a>
+<a href="help.html">자주 묻는 질문</a>
+<a href="inquiry.html">1:1 문의</a>
+</nav>
+</div>
+<div style="border-top: 1px solid #E4E4E7; padding-top: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #71717A;">
+<div style="display: flex; gap: 8px 16px; flex-wrap: wrap; font-size: 13px; color: #3F3F46;">
+<a href="terms.html">이용약관</a>
+<a href="privacy.html" style="font-weight: 700; color: #09090B;">개인정보처리방침</a>
+<a href="programterms.html">검진 프로그램 이용약관</a>
+<a href="licenses.html">오픈소스 라이선스</a>
+</div>
+<span>상호 [사업자 확인 필요] · 대표 [사업자 확인 필요] · 사업자등록번호 [사업자 확인 필요] <a href="help.html" style="text-decoration: underline;">사업자정보 확인</a></span>
+<span>통신판매업 신고번호 [사업자 확인 필요] · 사업장 주소 [사업자 확인 필요]</span>
+<span>고객센터 [사업자 확인 필요] · 이메일 [사업자 확인 필요] · 운영 시간 [사업자 확인 필요] · 호스팅 제공자 [사업자 확인 필요]</span>
+<span style="margin-top: 8px; font-size: 13px; color: #3F3F46;">COMFIT이 직접 판매하는 상품을 제외하고, COMFIT은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 판매자가 등록한 상품 정보와 거래에 대한 책임은 각 판매자에게 있습니다.</span>
+<span>결과표는 검사 시점의 측정 결과이며 부품의 성능이나 수명을 보증하지 않습니다.</span>
+</div>
+</div>
+</footer>
+
+</div>
+</template>
+<script type="text/plain" id="dc-code">
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+<script src="runtime.js"></script>
+</body>
+</html>
