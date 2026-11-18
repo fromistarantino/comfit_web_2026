@@ -1,5 +1,11 @@
 /* COMFIT 사이트 런타임: 페이지 안의 <template id="dc">를 상태에 맞게 그리고, 바뀐 부분만 고친다. */
 (function () {
+  /* 다른 사이트가 이 페이지를 몰래 틀(iframe) 안에 넣어 클릭을 가로채지 못하게 막는다. */
+  if (window.top !== window.self) {
+    document.documentElement.style.display = 'none';
+    try { window.top.location.replace(window.self.location.href); } catch (e) {}
+    return;
+  }
   var tpl = document.getElementById('dc'), codeEl = document.getElementById('dc-code'), app = document.getElementById('app');
   if (!tpl || !codeEl || !app) return;
   var inst, pending = false;
@@ -34,8 +40,8 @@
     for (i = 0; i < node.attributes.length; i++) {
       var a = node.attributes[i], name = a.name, one = ONE.exec(a.value);
       if (name.indexOf('hint-') === 0) continue;
-      if (/^on[a-z]+$/.test(name)) {
-        var fn = one ? look(scope, one[1]) : null, ev = name.slice(2);
+      if (/^(dc-)?on[a-z]+$/.test(name)) {
+        var fn = one ? look(scope, one[1]) : null, ev = name.replace(/^(dc-)?on/, '');
         if (ev === 'change' && (tag === 'textarea' || (tag === 'input' && !/checkbox|radio|file/.test(node.getAttribute('type') || 'text')))) ev = 'input';
         if (typeof fn === 'function') el.__h[ev] = fn;
         continue;
@@ -81,7 +87,7 @@
     while (old) { var n = old.nextSibling; parent.removeChild(old); old = n; }
   }
   function render() {
-    var vals = inst.renderVals(), frag = document.createDocumentFragment();
+    var vals = Object.assign({ cfg: window.COMFIT || {} }, inst.renderVals()), frag = document.createDocumentFragment();
     var kids = tpl.content.childNodes;
     for (var i = 0; i < kids.length; i++) build(kids[i], vals, frag);
     frag.normalize();
