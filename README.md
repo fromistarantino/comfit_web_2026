@@ -9,6 +9,8 @@
 |---|---|
 | 글·이벤트 기간·경품·다운로드 주소 고치기 | [docs/글-수정-방법.md](docs/글-수정-방법.md) — 대부분 `web/config.js` 한 파일 |
 | 이벤트 참여 내용 받아 보기 (Google 시트) | [docs/이벤트-접수-설정.md](docs/이벤트-접수-설정.md) |
+| 내 도메인 연결 | [docs/도메인-연결.md](docs/도메인-연결.md) — `deploy.json`의 `domain` |
+| 아직 정할 것 목록 | [docs/논의-필요.md](docs/논의-필요.md) |
 
 `main`에 고친 내용을 저장(commit)하면 GitHub Actions가 자동으로 배포합니다 (`.github/workflows/deploy.yml`, 2~3분).
 
@@ -55,7 +57,7 @@ python3 tools/deploy.py        # deploy.json 의 "mobile" 값대로 (true = all,
 미리 보기: 저장소 폴더에서 `python3 -m http.server 8000`을 띄우고 `http://localhost:8000/web/` 를 엽니다.
 
 ## 아직 남아 있는 것
-- `web/config.js`: 접수 주소(`formEndpoint`), 다운로드 주소(`downloadUrl`), 문의 이메일, 사업자 정보(`footerLines`)
+- [docs/논의-필요.md](docs/논의-필요.md) 참고
 - 약관·처리방침·공지·FAQ 안의 `[사업자 확인 필요]` 자리 (시행일, 상호, 보호책임자 등)
 - 이벤트 페이지 외 나머지 페이지의 `<meta name="robots" content="noindex">` (정식 공개 때 지우기)
 
