@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'none'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>COMFIT 홈</title>
+<meta name="description" content="COMFIT(컴핏): 내 PC를 무료로 검진하고 부품별 상태를 결과표로 확인하세요.">
+<meta property="og:title" content="COMFIT 홈">
+<meta property="og:description" content="COMFIT(컴핏): 내 PC를 무료로 검진하고 부품별 상태를 결과표로 확인하세요.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/ca7b12c2966f7a2a6f655d30bc6caae8.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="mobile/mobile.css" data-part="mobile">
+</head>
+<body>
+<div id="app">
+<div style="display: flex; flex-direction: column; min-width: 0; font-variant-numeric: tabular-nums;">
+
+<div style="background: #18181B; color: #E4E4E7;">
+<div class="cf-top" style="max-width: 1200px; margin: 0 auto; padding: 6px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 4px 16px; min-height: 34px; flex-wrap: wrap; font-size: 12px; line-height: 1.5;">
+<span><strong style="color: #FFFFFF;">오픈 준비 중</strong><span class="cf-long"> 지금은 무료 PC 검진 이벤트에 참여할 수 있습니다. SHOP·장터·시세와 로그인은 준비 중입니다.</span><span class="cf-short"> 지금은 무료 검진 이벤트만 열려 있어요.</span></span>
+<nav aria-label="이용 메뉴" style="display: flex; gap: 18px; color: #A1A1AA;">
+<a href="join.html" style="color: #B6F24B; font-weight: 700;">이벤트 참여</a>
+<a href="help.html">고객센터</a>
+<a href="login.html">로그인</a>
+</nav>
+</div>
+</div>
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #E4E4E7;">
+<div class="cf-hd">
+<a href="index.html" aria-label="COMFIT 홈" style="display: flex; align-items: center; height: 40px;"><img src="assets/a7a031b26dcac6dd076e4579f3bf8d61.svg" alt="COMFIT" style="height: 24px; width: auto; display: block;"></a>
+<nav aria-label="주 메뉴" class="cf-nav">
+<a href="index.html" aria-current="page" style="font-weight: 700;">HOME</a>
+<a href="diagnose.html">검진</a>
+<a href="event.html" style="color: #047857; font-weight: 700;">이벤트</a>
+<a href="list.html">SHOP</a>
+<a href="market.html">장터</a>
+<a href="price.html">시세</a>
+</nav>
+<div class="cf-ic">
+<a href="search.html" aria-label="검색" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></a>
+<a href="mypage.html" aria-label="마이페이지" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+</div>
+</div>
+</header>
+
+<section aria-roledescription="carousel" aria-label="배너" style="position: relative;">
+<div style="overflow: hidden;">
+<div style="display: flex; transform: translateX(0%); transition: transform 700ms cubic-bezier(0.22, 0.61, 0.36, 1); will-change: transform;">
+<div aria-roledescription="slide" aria-label="1 / 3" aria-hidden="false" style="flex: 0 0 100%; min-width: 0;">
+<div style="background: #080B09; color: #FAFAFA; height: 100%;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; min-height: 420px;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px; padding: 48px 0;">
+<span style="font-size: 14px; font-weight: 800; color: #B6F24B;">COMFIT 오픈 이벤트</span>
+<h1 style="margin: 0; font-size: 36px; line-height: 1.2; font-weight: 900; letter-spacing: -0.03em;">PC 건강검진 <span style="color: #B6F24B;">DAY</span><br>검진하고 그래픽카드 받아 가세요</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D4D4D8;">EVENT 1 컴퓨터 무료 진단 · EVENT 2 설문 참여하고 경품 추첨</p>
+<p style="margin: 0; font-size: 14px; color: #A1A1AA;">2026. 11. 20(금) ~ 11. 30(월) · 당첨 발표 2026. 12. 4(금) · 당첨자에게 개별 메일</p>
+<div style="display: flex; gap: 8px; margin-top: 12px;"><a href="join.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 6px; background: #B6F24B; color: #09090B; font-size: 14px; font-weight: 800;">이벤트 참여하기</a></div>
+</div>
+<div class="cf-hero-r" style="flex: 1.3 1 440px; min-width: 0; display: flex; align-items: flex-end; justify-content: center; gap: 4px; padding-top: 28px;">
+<span class="cf-gift" style="display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; padding-bottom: 18px;"><img src="assets/27cddd580638ee280f80b291877f0c27.webp" alt="경품 예시: PC 케이스, 그래픽카드, 수랭 쿨러, 메모리" style="display: block; width: 100%; height: auto; mix-blend-mode: lighten;"><span style="font-size: 11px; color: #71717A;">상품 이미지 예시</span></span>
+<div class="cf-frog" style="min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+<span style="position: relative; padding: 12px 20px; border-radius: 14px; background: #ECFCCB; color: #09090B; font-size: 16px; font-weight: 800;">내 PC 건강검진하고 그래픽카드 받자!<span aria-hidden="true" style="position: absolute; left: 50%; bottom: -7px; width: 14px; height: 14px; background: #ECFCCB; transform: translateX(-50%) rotate(45deg);"></span></span>
+<img src="assets/f9d6dea3f368d1ed6c0ed6425be44b7a.png" alt="COMFIT 캐릭터: 보안경을 쓰고 드라이버를 든 개구리 정비사" style="height: 320px; width: auto; max-width: 100%; object-fit: contain;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-roledescription="slide" aria-label="2 / 3" aria-hidden="true" style="flex: 0 0 100%; min-width: 0;">
+<div style="background: #E9EEF3; height: 100%;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; min-height: 420px;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px; padding: 48px 0;">
+<span style="font-size: 14px; font-weight: 800; color: #3F3F46;">COMFIT SHOP · 준비 중</span>
+<h1 style="margin: 0; font-size: 36px; line-height: 1.2; font-weight: 900; letter-spacing: -0.03em;">검진 결과표가 붙은<br>중고 부품만 모았습니다</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3F3F46;">검진 결과표로 상태를 확인하고 사는 중고 거래, 곧 열립니다.</p>
+<div style="display: flex; gap: 8px; margin-top: 12px;"><a href="list.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 6px; background: #18181B; color: #FAFAFA; font-size: 14px; font-weight: 800;">어떤 서비스인지 보기</a></div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; justify-content: center;"><img src="assets/694d4fe745c36a2b072ccdef55f45af7.webp" alt="" style="width: 100%; max-width: 480px; height: 340px; object-fit: contain;"></div>
+</div>
+</div>
+</div>
+<div aria-roledescription="slide" aria-label="3 / 3" aria-hidden="true" style="flex: 0 0 100%; min-width: 0;">
+<div style="background: #ECEAF8; height: 100%;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; min-height: 420px;">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 12px; padding: 48px 0;">
+<span style="font-size: 14px; font-weight: 800; color: #3F3F46;">무료 PC 건강검진</span>
+<h1 style="margin: 0; font-size: 36px; line-height: 1.2; font-weight: 900; letter-spacing: -0.03em;">내 PC의 건강 점수,<br>한눈에 확인하세요</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3F3F46;">데스크톱부터 노트북까지 진단하고, 점수와 부품별 상태를 리포트로 받아보세요.</p>
+<div style="display: flex; gap: 8px; margin-top: 12px;"><a href="diagnose.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 6px; background: #18181B; color: #FAFAFA; font-size: 14px; font-weight: 800;">무료 검진 받아보기</a></div>
+</div>
+<div class="cf-hero-pad" style="flex: 1.6 1 420px; min-width: 0; display: flex; justify-content: center;"><img src="assets/3e6948427e7d0768b011405c60ce7254.webp" alt="노트북과 데스크톱 PC, 그리고 종합 건강 점수와 부품별 상태가 나오는 PC 상태 리포트 예시" style="display: block; width: 100%; max-width: 700px; height: auto;"></div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" style="flex: 0 0 100%; min-width: 0;">
+<div style="background: #080B09; color: #FAFAFA; height: 100%;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; min-height: 420px;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px; padding: 48px 0;">
+<span style="font-size: 14px; font-weight: 800; color: #B6F24B;">COMFIT 오픈 이벤트</span>
+<h1 style="margin: 0; font-size: 36px; line-height: 1.2; font-weight: 900; letter-spacing: -0.03em;">PC 건강검진 <span style="color: #B6F24B;">DAY</span><br>검진하고 그래픽카드 받아 가세요</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D4D4D8;">EVENT 1 컴퓨터 무료 진단 · EVENT 2 설문 참여하고 경품 추첨</p>
+<p style="margin: 0; font-size: 14px; color: #A1A1AA;">2026. 11. 20(금) ~ 11. 30(월) · 당첨 발표 2026. 12. 4(금) · 당첨자에게 개별 메일</p>
+<div style="display: flex; gap: 8px; margin-top: 12px;"><a tabindex="-1" href="join.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 6px; background: #B6F24B; color: #09090B; font-size: 14px; font-weight: 800;">이벤트 참여하기</a></div>
+</div>
+<div class="cf-hero-r" style="flex: 1.3 1 440px; min-width: 0; display: flex; align-items: flex-end; justify-content: center; gap: 4px; padding-top: 28px;">
+<span class="cf-gift" style="display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; padding-bottom: 18px;"><img src="assets/27cddd580638ee280f80b291877f0c27.webp" alt="" style="display: block; width: 100%; height: auto; mix-blend-mode: lighten;"><span style="font-size: 11px; color: #71717A;">상품 이미지 예시</span></span>
+<div class="cf-frog" style="min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+<span style="position: relative; padding: 12px 20px; border-radius: 14px; background: #ECFCCB; color: #09090B; font-size: 16px; font-weight: 800;">내 PC 건강검진하고 그래픽카드 받자!<span aria-hidden="true" style="position: absolute; left: 50%; bottom: -7px; width: 14px; height: 14px; background: #ECFCCB; transform: translateX(-50%) rotate(45deg);"></span></span>
+<img src="assets/f9d6dea3f368d1ed6c0ed6425be44b7a.png" alt="" style="height: 320px; width: auto; max-width: 100%; object-fit: contain;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="position: absolute; right: max(24px, calc((100% - 1200px) / 2 + 24px)); bottom: 20px; display: flex; align-items: center; gap: 6px;">
+<button type="button" aria-label="이전 배너" style="width: 32px; height: 32px; border-radius: 999px; border: 0; background: rgba(9,9,11,0.45); color: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+<span style="min-width: 44px; text-align: center; padding: 4px 10px; border-radius: 999px; background: rgba(9,9,11,0.45); color: #FAFAFA; font-size: 12px;">1 / 3</span>
+<button type="button" aria-label="자동 넘김 멈춤" style="width: 32px; height: 32px; border-radius: 999px; border: 0; background: rgba(9,9,11,0.45); color: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"></rect><rect x="14" y="4" width="4" height="16" rx="1"></rect></svg>
+
+</button>
+<button type="button" aria-label="다음 배너" style="width: 32px; height: 32px; border-radius: 999px; border: 0; background: rgba(9,9,11,0.45); color: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
+</div>
+</section>
+
+<main style="max-width: 1200px; width: 100%; margin: 0 auto; padding: 32px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px;">
+
+<section aria-labelledby="event-title" style="border-radius: 10px; background: #18181B; color: #FAFAFA; padding: 28px 32px; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; justify-content: space-between;">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+<h2 id="event-title" style="margin: 0; font-size: 17px; font-weight: 800; line-height: 1.27;">PC 건강검진 DAY 이벤트 참여 중</h2>
+<p style="margin: 0; font-size: 14px; color: #A1A1AA;">무료 검진 리포트를 첨부하고 설문에 답하면 경품 추첨 · 2026. 11. 20(금) ~ 11. 30(월)</p>
+</div>
+<a href="join.html" style="display: inline-flex; align-items: center; gap: 4px; height: 44px; padding: 0 18px; border-radius: 6px; background: #FAFAFA; color: #18181B; font-size: 14px; font-weight: 800;">참여하기<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></a>
+</section>
+
+<section aria-labelledby="join-title" style="display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; flex-direction: column; gap: 2px;">
+<h2 id="join-title" style="margin: 0; font-size: 17px; font-weight: 800; line-height: 1.27;">이벤트 참여 방법</h2>
+<p style="margin: 0; font-size: 13px; font-weight: 500; color: #71717A;">3단계, 몇 분이면 끝납니다</p>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
+<li style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 1</span><strong style="font-size: 16px;">무료 검진 프로그램 받기</strong><span style="font-size: 14px; line-height: 1.6; color: #52525B;">Windows PC에서 받아 실행합니다.</span><a href="download.html" style="font-size: 13px; text-decoration: underline;">다운로드</a></li>
+<li style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 2</span><strong style="font-size: 16px;">검진하고 리포트 저장</strong><span style="font-size: 14px; line-height: 1.6; color: #52525B;">끝나면 나오는 리포트 파일을 저장합니다.</span></li>
+<li style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 3</span><strong style="font-size: 16px;">리포트 첨부 + 설문 제출</strong><span style="font-size: 14px; line-height: 1.6; color: #52525B;">참여 페이지에서 제출하면 경품 추첨 대상!</span><a href="join.html" style="font-size: 13px; text-decoration: underline;">참여하기</a></li>
+</ol>
+</section>
+
+<section aria-labelledby="sell-title" style="display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; flex-direction: column; gap: 2px;">
+<h2 id="sell-title" style="margin: 0; font-size: 17px; font-weight: 800; line-height: 1.27;">곧 열리는 거래 서비스</h2>
+<p style="margin: 0; font-size: 13px; font-weight: 500; color: #71717A;">SHOP·장터·시세는 준비 중입니다. 지금은 상품이 등록되어 있지 않습니다.</p>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); border: 1px solid #E4E4E7; border-radius: 10px;">
+<li style="padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; border-right: 1px solid #E4E4E7;">
+<span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 1</span>
+<strong style="font-size: 16px;">부품을 꽂은 PC에서 검진</strong>
+<span style="font-size: 14px; line-height: 1.6; color: #52525B;">프로그램이 부하를 걸어 반응을 재고 결과표를 만듭니다.</span>
+</li>
+<li style="padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; border-right: 1px solid #E4E4E7;">
+<span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 2</span>
+<strong style="font-size: 16px;">결과표를 붙여 판매 입찰</strong>
+<span style="font-size: 14px; line-height: 1.6; color: #52525B;">검진 번호를 서버 기록과 대조해, 고친 결과표는 올라가지 않습니다.</span>
+</li>
+<li style="padding: 20px 24px; display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 3</span>
+<strong style="font-size: 16px;">체결되면 발송, 받은 쪽이 재검진</strong>
+<span style="font-size: 14px; line-height: 1.6; color: #52525B;">받은 부품을 다시 검진해 같은 상태인지 확인합니다.</span>
+</li>
+</ol>
+</section>
+
+</main>
+
+<footer style="border-top: 1px solid #E4E4E7;">
+<div class="cf-pad" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 56px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 28px 64px;">
+<img src="assets/fb95a1db5f613153e6ceedd8102dc5ae.svg" alt="COMFIT" style="height: 18px; width: auto; align-self: flex-start;">
+<nav aria-label="이용 안내" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #52525B;">
+<strong style="font-size: 15px; color: #09090B;">이용 안내</strong>
+<a href="guide.html">서비스 소개·검진 안내</a>
+<a href="event.html">이벤트 안내</a>
+<a href="join.html">이벤트 참여</a>
+<a href="download.html">프로그램 다운로드</a>
+</nav>
+<nav aria-label="고객 지원" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #52525B;">
+<strong style="font-size: 15px; color: #09090B;">고객지원</strong>
+<a href="notice.html">공지사항</a>
+<a href="help.html">자주 묻는 질문</a>
+<a href="inquiry.html">문의하기</a>
+</nav>
+</div>
+<div style="border-top: 1px solid #E4E4E7; padding-top: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #71717A;">
+<div style="display: flex; gap: 8px 16px; flex-wrap: wrap; font-size: 13px; color: #3F3F46;">
+<a href="terms.html">이용약관</a>
+<a href="privacy.html" style="font-weight: 700; color: #09090B;">개인정보처리방침</a>
+<a href="programterms.html">검진 프로그램 이용약관</a>
+<a href="licenses.html">오픈소스 라이선스</a>
+</div>
+
+
+<span style="margin-top: 8px; font-size: 13px; color: #3F3F46;">COMFIT은 현재 상품을 판매하거나 거래를 중개하지 않습니다. SHOP·장터·시세는 준비 중인 서비스입니다.</span>
+<span>결과표는 검사 시점의 측정 결과이며 부품의 성능이나 수명을 보증하지 않습니다.</span>
+</div>
+</div>
+</footer>
+
+
+<div role="dialog" aria-modal="true" aria-label="PC 건강검진 DAY 공모전 안내" style="position: fixed; inset: 0; z-index: 50; background: rgba(9,9,11,0.6); display: flex; align-items: flex-start; justify-content: center; padding: 72px 16px 16px; overflow-y: auto;">
+<div style="width: min(400px, 92vw, calc((100vh - 152px) * 0.5625)); border-radius: 12px; overflow: hidden; background: #080B09; display: flex; flex-direction: column;">
+<a href="join.html" style="display: block;"><img src="assets/0347e0270a06ed411387f933b8935339.jpg" alt="COMFIT 오픈 이벤트 PC 건강검진 DAY. 2026년 11월 20일(금)부터 11월 30일(월)까지. EVENT 1 컴퓨터 무료 진단, EVENT 2 설문 후 그래픽카드, RAM 등 상품 받아가기. 당첨 발표 12월 4일(금) 개별 메일. 당첨 상품: MSI 지포스 RTX 5060 벤투스 2X OC V1 D7 8GB, ESSENCORE KLEVV DDR5-5600 16GB, 컴퓨터 케이스, 쿨러 등." style="display: block; width: 100%; height: auto;"></a>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #E4E4E7; background: #FFFFFF;">
+<button type="button" style="height: 48px; border: 0; border-right: 1px solid #E4E4E7; background: #FFFFFF; font: inherit; font-size: 14px; color: #52525B; cursor: pointer;">오늘 하루 보지 않기</button>
+<button type="button" style="height: 48px; border: 0; background: #FFFFFF; font: inherit; font-size: 14px; font-weight: 800; cursor: pointer;">닫기</button>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+<template id="dc">
+<div style="display: flex; flex-direction: column; min-width: 0; font-variant-numeric: tabular-nums;">
+
+<div style="background: #18181B; color: #E4E4E7;">
+<div class="cf-top" style="max-width: 1200px; margin: 0 auto; padding: 6px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 4px 16px; min-height: 34px; flex-wrap: wrap; font-size: 12px; line-height: 1.5;">
+<span><strong style="color: #FFFFFF;">오픈 준비 중</strong><span class="cf-long"> 지금은 무료 PC 검진 이벤트에 참여할 수 있습니다. SHOP·장터·시세와 로그인은 준비 중입니다.</span><span class="cf-short"> 지금은 무료 검진 이벤트만 열려 있어요.</span></span>
+<nav aria-label="이용 메뉴" style="display: flex; gap: 18px; color: #A1A1AA;">
+<a href="join.html" style="color: #B6F24B; font-weight: 700;">이벤트 참여</a>
+<a href="help.html">고객센터</a>
+<a href="login.html">로그인</a>
+</nav>
+</div>
+</div>
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #E4E4E7;">
+<div class="cf-hd">
+<a href="index.html" aria-label="COMFIT 홈" style="display: flex; align-items: center; height: 40px;"><img src="assets/a7a031b26dcac6dd076e4579f3bf8d61.svg" alt="COMFIT" style="height: 24px; width: auto; display: block;"></a>
+<nav aria-label="주 메뉴" class="cf-nav">
+<a href="index.html" aria-current="page" style="font-weight: 700;">HOME</a>
+<a href="diagnose.html">검진</a>
+<a href="event.html" style="color: #047857; font-weight: 700;">이벤트</a>
+<a href="list.html">SHOP</a>
+<a href="market.html">장터</a>
+<a href="price.html">시세</a>
+</nav>
+<div class="cf-ic">
+<a href="search.html" aria-label="검색" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></a>
+<a href="mypage.html" aria-label="마이페이지" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+</div>
+</div>
+</header>
+
+<section aria-roledescription="carousel" aria-label="배너" dc-onmouseenter="{{hoverOn}}" dc-onmouseleave="{{hoverOff}}" style="position: relative;">
+<div style="overflow: hidden;">
+<div style="display: flex; transform: translateX({{trackX}}); transition: {{trackTransition}}; will-change: transform;">
+<div aria-roledescription="slide" aria-label="1 / 3" aria-hidden="{{h0}}" style="flex: 0 0 100%; min-width: 0;">
+<div style="background: #080B09; color: #FAFAFA; height: 100%;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; min-height: 420px;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px; padding: 48px 0;">
+<span style="font-size: 14px; font-weight: 800; color: #B6F24B;">COMFIT 오픈 이벤트</span>
+<h1 style="margin: 0; font-size: 36px; line-height: 1.2; font-weight: 900; letter-spacing: -0.03em;">PC 건강검진 <span style="color: #B6F24B;">DAY</span><br>검진하고 그래픽카드 받아 가세요</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D4D4D8;">EVENT 1 컴퓨터 무료 진단 · EVENT 2 설문 참여하고 경품 추첨</p>
+<p style="margin: 0; font-size: 14px; color: #A1A1AA;">{{cfg.eventPeriod}} · 당첨 발표 {{cfg.eventAnnounce}}</p>
+<div style="display: flex; gap: 8px; margin-top: 12px;"><a href="join.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 6px; background: #B6F24B; color: #09090B; font-size: 14px; font-weight: 800;">이벤트 참여하기</a></div>
+</div>
+<div class="cf-hero-r" style="flex: 1.3 1 440px; min-width: 0; display: flex; align-items: flex-end; justify-content: center; gap: 4px; padding-top: 28px;">
+<span class="cf-gift" style="display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; padding-bottom: 18px;"><img src="assets/27cddd580638ee280f80b291877f0c27.webp" alt="경품 예시: PC 케이스, 그래픽카드, 수랭 쿨러, 메모리" style="display: block; width: 100%; height: auto; mix-blend-mode: lighten;"><span style="font-size: 11px; color: #71717A;">상품 이미지 예시</span></span>
+<div class="cf-frog" style="min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+<span style="position: relative; padding: 12px 20px; border-radius: 14px; background: #ECFCCB; color: #09090B; font-size: 16px; font-weight: 800;">내 PC 건강검진하고 그래픽카드 받자!<span aria-hidden="true" style="position: absolute; left: 50%; bottom: -7px; width: 14px; height: 14px; background: #ECFCCB; transform: translateX(-50%) rotate(45deg);"></span></span>
+<img src="assets/f9d6dea3f368d1ed6c0ed6425be44b7a.png" alt="COMFIT 캐릭터: 보안경을 쓰고 드라이버를 든 개구리 정비사" style="height: 320px; width: auto; max-width: 100%; object-fit: contain;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-roledescription="slide" aria-label="2 / 3" aria-hidden="{{h1}}" style="flex: 0 0 100%; min-width: 0;">
+<div style="background: #E9EEF3; height: 100%;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; min-height: 420px;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px; padding: 48px 0;">
+<span style="font-size: 14px; font-weight: 800; color: #3F3F46;">COMFIT SHOP · 준비 중</span>
+<h1 style="margin: 0; font-size: 36px; line-height: 1.2; font-weight: 900; letter-spacing: -0.03em;">검진 결과표가 붙은<br>중고 부품만 모았습니다</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3F3F46;">검진 결과표로 상태를 확인하고 사는 중고 거래, 곧 열립니다.</p>
+<div style="display: flex; gap: 8px; margin-top: 12px;"><a href="list.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 6px; background: #18181B; color: #FAFAFA; font-size: 14px; font-weight: 800;">어떤 서비스인지 보기</a></div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; justify-content: center;"><img src="assets/694d4fe745c36a2b072ccdef55f45af7.webp" alt="" style="width: 100%; max-width: 480px; height: 340px; object-fit: contain;"></div>
+</div>
+</div>
+</div>
+<div aria-roledescription="slide" aria-label="3 / 3" aria-hidden="{{h2}}" style="flex: 0 0 100%; min-width: 0;">
+<div style="background: #ECEAF8; height: 100%;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; min-height: 420px;">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 12px; padding: 48px 0;">
+<span style="font-size: 14px; font-weight: 800; color: #3F3F46;">무료 PC 건강검진</span>
+<h1 style="margin: 0; font-size: 36px; line-height: 1.2; font-weight: 900; letter-spacing: -0.03em;">내 PC의 건강 점수,<br>한눈에 확인하세요</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3F3F46;">데스크톱부터 노트북까지 진단하고, 점수와 부품별 상태를 리포트로 받아보세요.</p>
+<div style="display: flex; gap: 8px; margin-top: 12px;"><a href="diagnose.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 6px; background: #18181B; color: #FAFAFA; font-size: 14px; font-weight: 800;">무료 검진 받아보기</a></div>
+</div>
+<div class="cf-hero-pad" style="flex: 1.6 1 420px; min-width: 0; display: flex; justify-content: center;"><img src="assets/3e6948427e7d0768b011405c60ce7254.webp" alt="노트북과 데스크톱 PC, 그리고 종합 건강 점수와 부품별 상태가 나오는 PC 상태 리포트 예시" style="display: block; width: 100%; max-width: 700px; height: auto;"></div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" style="flex: 0 0 100%; min-width: 0;">
+<div style="background: #080B09; color: #FAFAFA; height: 100%;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; min-height: 420px;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px; padding: 48px 0;">
+<span style="font-size: 14px; font-weight: 800; color: #B6F24B;">COMFIT 오픈 이벤트</span>
+<h1 style="margin: 0; font-size: 36px; line-height: 1.2; font-weight: 900; letter-spacing: -0.03em;">PC 건강검진 <span style="color: #B6F24B;">DAY</span><br>검진하고 그래픽카드 받아 가세요</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D4D4D8;">EVENT 1 컴퓨터 무료 진단 · EVENT 2 설문 참여하고 경품 추첨</p>
+<p style="margin: 0; font-size: 14px; color: #A1A1AA;">{{cfg.eventPeriod}} · 당첨 발표 {{cfg.eventAnnounce}}</p>
+<div style="display: flex; gap: 8px; margin-top: 12px;"><a tabindex="-1" href="join.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 6px; background: #B6F24B; color: #09090B; font-size: 14px; font-weight: 800;">이벤트 참여하기</a></div>
+</div>
+<div class="cf-hero-r" style="flex: 1.3 1 440px; min-width: 0; display: flex; align-items: flex-end; justify-content: center; gap: 4px; padding-top: 28px;">
+<span class="cf-gift" style="display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; padding-bottom: 18px;"><img src="assets/27cddd580638ee280f80b291877f0c27.webp" alt="" style="display: block; width: 100%; height: auto; mix-blend-mode: lighten;"><span style="font-size: 11px; color: #71717A;">상품 이미지 예시</span></span>
+<div class="cf-frog" style="min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+<span style="position: relative; padding: 12px 20px; border-radius: 14px; background: #ECFCCB; color: #09090B; font-size: 16px; font-weight: 800;">내 PC 건강검진하고 그래픽카드 받자!<span aria-hidden="true" style="position: absolute; left: 50%; bottom: -7px; width: 14px; height: 14px; background: #ECFCCB; transform: translateX(-50%) rotate(45deg);"></span></span>
+<img src="assets/f9d6dea3f368d1ed6c0ed6425be44b7a.png" alt="" style="height: 320px; width: auto; max-width: 100%; object-fit: contain;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="position: absolute; right: max(24px, calc((100% - 1200px) / 2 + 24px)); bottom: 20px; display: flex; align-items: center; gap: 6px;">
+<button type="button" aria-label="이전 배너" dc-onclick="{{prev}}" style="width: 32px; height: 32px; border-radius: 999px; border: 0; background: rgba(9,9,11,0.45); color: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+<span style="min-width: 44px; text-align: center; padding: 4px 10px; border-radius: 999px; background: rgba(9,9,11,0.45); color: #FAFAFA; font-size: 12px;">{{slideLabel}}</span>
+<button type="button" aria-label="{{playLabel}}" dc-onclick="{{togglePlay}}" style="width: 32px; height: 32px; border-radius: 999px; border: 0; background: rgba(9,9,11,0.45); color: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;">
+<sc-if value="{{playing}}" hint-placeholder-val="{{true}}"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"></rect><rect x="14" y="4" width="4" height="16" rx="1"></rect></svg></sc-if>
+<sc-if value="{{paused}}" hint-placeholder-val="{{false}}"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l14 9-14 9z"></path></svg></sc-if>
+</button>
+<button type="button" aria-label="다음 배너" dc-onclick="{{next}}" style="width: 32px; height: 32px; border-radius: 999px; border: 0; background: rgba(9,9,11,0.45); color: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
+</div>
+</section>
+
+<main style="max-width: 1200px; width: 100%; margin: 0 auto; padding: 32px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px;">
+
+<section aria-labelledby="event-title" style="border-radius: 10px; background: #18181B; color: #FAFAFA; padding: 28px 32px; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; justify-content: space-between;">
+<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+<h2 id="event-title" style="margin: 0; font-size: 17px; font-weight: 800; line-height: 1.27;">{{cfg.eventName}} 이벤트 참여 중</h2>
+<p style="margin: 0; font-size: 14px; color: #A1A1AA;">무료 검진 리포트를 첨부하고 설문에 답하면 경품 추첨 · {{cfg.eventPeriod}}</p>
+</div>
+<a href="join.html" style="display: inline-flex; align-items: center; gap: 4px; height: 44px; padding: 0 18px; border-radius: 6px; background: #FAFAFA; color: #18181B; font-size: 14px; font-weight: 800;">참여하기<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></a>
+</section>
+
+<section aria-labelledby="join-title" style="display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; flex-direction: column; gap: 2px;">
+<h2 id="join-title" style="margin: 0; font-size: 17px; font-weight: 800; line-height: 1.27;">이벤트 참여 방법</h2>
+<p style="margin: 0; font-size: 13px; font-weight: 500; color: #71717A;">3단계, 몇 분이면 끝납니다</p>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
+<li style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 1</span><strong style="font-size: 16px;">무료 검진 프로그램 받기</strong><span style="font-size: 14px; line-height: 1.6; color: #52525B;">Windows PC에서 받아 실행합니다.</span><a href="download.html" style="font-size: 13px; text-decoration: underline;">다운로드</a></li>
+<li style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 2</span><strong style="font-size: 16px;">검진하고 리포트 저장</strong><span style="font-size: 14px; line-height: 1.6; color: #52525B;">끝나면 나오는 리포트 파일을 저장합니다.</span></li>
+<li style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px;"><span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 3</span><strong style="font-size: 16px;">리포트 첨부 + 설문 제출</strong><span style="font-size: 14px; line-height: 1.6; color: #52525B;">참여 페이지에서 제출하면 경품 추첨 대상!</span><a href="join.html" style="font-size: 13px; text-decoration: underline;">참여하기</a></li>
+</ol>
+</section>
+
+<section aria-labelledby="sell-title" style="display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; flex-direction: column; gap: 2px;">
+<h2 id="sell-title" style="margin: 0; font-size: 17px; font-weight: 800; line-height: 1.27;">곧 열리는 거래 서비스</h2>
+<p style="margin: 0; font-size: 13px; font-weight: 500; color: #71717A;">SHOP·장터·시세는 준비 중입니다. 지금은 상품이 등록되어 있지 않습니다.</p>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); border: 1px solid #E4E4E7; border-radius: 10px;">
+<li style="padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; border-right: 1px solid #E4E4E7;">
+<span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 1</span>
+<strong style="font-size: 16px;">부품을 꽂은 PC에서 검진</strong>
+<span style="font-size: 14px; line-height: 1.6; color: #52525B;">프로그램이 부하를 걸어 반응을 재고 결과표를 만듭니다.</span>
+</li>
+<li style="padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; border-right: 1px solid #E4E4E7;">
+<span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 2</span>
+<strong style="font-size: 16px;">결과표를 붙여 판매 입찰</strong>
+<span style="font-size: 14px; line-height: 1.6; color: #52525B;">검진 번호를 서버 기록과 대조해, 고친 결과표는 올라가지 않습니다.</span>
+</li>
+<li style="padding: 20px 24px; display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 13px; font-weight: 600; color: #71717A;">STEP 3</span>
+<strong style="font-size: 16px;">체결되면 발송, 받은 쪽이 재검진</strong>
+<span style="font-size: 14px; line-height: 1.6; color: #52525B;">받은 부품을 다시 검진해 같은 상태인지 확인합니다.</span>
+</li>
+</ol>
+</section>
+
+</main>
+
+<footer style="border-top: 1px solid #E4E4E7;">
+<div class="cf-pad" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 56px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-wrap: wrap; gap: 28px 64px;">
+<img src="assets/fb95a1db5f613153e6ceedd8102dc5ae.svg" alt="COMFIT" style="height: 18px; width: auto; align-self: flex-start;">
+<nav aria-label="이용 안내" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #52525B;">
+<strong style="font-size: 15px; color: #09090B;">이용 안내</strong>
+<a href="guide.html">서비스 소개·검진 안내</a>
+<a href="event.html">이벤트 안내</a>
+<a href="join.html">이벤트 참여</a>
+<a href="download.html">프로그램 다운로드</a>
+</nav>
+<nav aria-label="고객 지원" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #52525B;">
+<strong style="font-size: 15px; color: #09090B;">고객지원</strong>
+<a href="notice.html">공지사항</a>
+<a href="help.html">자주 묻는 질문</a>
+<a href="inquiry.html">문의하기</a>
+</nav>
+</div>
+<div style="border-top: 1px solid #E4E4E7; padding-top: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #71717A;">
+<div style="display: flex; gap: 8px 16px; flex-wrap: wrap; font-size: 13px; color: #3F3F46;">
+<a href="terms.html">이용약관</a>
+<a href="privacy.html" style="font-weight: 700; color: #09090B;">개인정보처리방침</a>
+<a href="programterms.html">검진 프로그램 이용약관</a>
+<a href="licenses.html">오픈소스 라이선스</a>
+</div>
+<sc-for list="{{cfg.footerLines}}" as="line" hint-placeholder-count="2"><span>{{line}}</span></sc-for>
+<sc-if value="{{cfg.hasEmail}}" hint-placeholder-val="{{false}}"><span>문의 <a href="{{cfg.mailto}}" style="text-decoration: underline;">{{cfg.contactEmail}}</a></span></sc-if>
+<span style="margin-top: 8px; font-size: 13px; color: #3F3F46;">COMFIT은 현재 상품을 판매하거나 거래를 중개하지 않습니다. SHOP·장터·시세는 준비 중인 서비스입니다.</span>
+<span>결과표는 검사 시점의 측정 결과이며 부품의 성능이나 수명을 보증하지 않습니다.</span>
+</div>
+</div>
+</footer>
+
+<sc-if value="{{popupOpen}}" hint-placeholder-val="{{false}}">
+<div role="dialog" aria-modal="true" aria-label="PC 건강검진 DAY 공모전 안내" style="position: fixed; inset: 0; z-index: 50; background: rgba(9,9,11,0.6); display: flex; align-items: flex-start; justify-content: center; padding: 72px 16px 16px; overflow-y: auto;">
+<div style="width: min(400px, 92vw, calc((100vh - 152px) * 0.5625)); border-radius: 12px; overflow: hidden; background: #080B09; display: flex; flex-direction: column;">
+<a href="join.html" dc-onclick="{{closePopup}}" style="display: block;"><img src="assets/0347e0270a06ed411387f933b8935339.jpg" alt="COMFIT 오픈 이벤트 PC 건강검진 DAY. 2026년 11월 20일(금)부터 11월 30일(월)까지. EVENT 1 컴퓨터 무료 진단, EVENT 2 설문 후 그래픽카드, RAM 등 상품 받아가기. 당첨 발표 12월 4일(금) 개별 메일. 당첨 상품: MSI 지포스 RTX 5060 벤투스 2X OC V1 D7 8GB, ESSENCORE KLEVV DDR5-5600 16GB, 컴퓨터 케이스, 쿨러 등." style="display: block; width: 100%; height: auto;"></a>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #E4E4E7; background: #FFFFFF;">
+<button type="button" dc-onclick="{{hideToday}}" style="height: 48px; border: 0; border-right: 1px solid #E4E4E7; background: #FFFFFF; font: inherit; font-size: 14px; color: #52525B; cursor: pointer;">오늘 하루 보지 않기</button>
+<button type="button" dc-onclick="{{closePopup}}" style="height: 48px; border: 0; background: #FFFFFF; font: inherit; font-size: 14px; font-weight: 800; cursor: pointer;">닫기</button>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{demoOpen}}" hint-placeholder-val="{{false}}">
+<div role="dialog" aria-modal="true" aria-labelledby="demo-title" style="position: fixed; inset: 0; z-index: 60; background: rgba(9,9,11,0.5); display: flex; align-items: center; justify-content: center; padding: 16px;">
+<div style="width: 100%; max-width: 380px; background: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 10px;">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 6px; background: #F4F4F5; font-size: 12px; font-weight: 700; color: #3F3F46;">준비 중</span>
+<h2 id="demo-title" style="margin: 0; font-size: 18px; font-weight: 700;">{{demoTitle}}</h2>
+<p style="margin: 0; font-size: 14px; line-height: 1.6; color: #52525B;">{{demoBody}}</p>
+<div style="display: flex; gap: 8px; margin-top: 8px;">
+<a href="join.html" style="flex: 1; display: inline-flex; align-items: center; justify-content: center; height: 44px; border-radius: 6px; border: 1px solid #E4E4E7; font-size: 14px; font-weight: 500;">공모전 보기</a>
+<button type="button" dc-onclick="{{closeDemo}}" style="flex: 1; height: 44px; border: 0; border-radius: 6px; background: #18181B; color: #FAFAFA; font: inherit; font-size: 14px; font-weight: 800; cursor: pointer;">확인</button>
+</div>
+</div>
+</div>
+</sc-if>
+
+</div>
+</template>
+<script type="text/plain" id="dc-code">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { tab: 'all', slide: 0, popup: true, demo: '', playing: true, hover: false, instant: false, reduce: false };
+  }
+  go(next) {
+    // slide 3 is a copy of slide 0, so 3 -> 1 keeps moving left instead of rewinding
+    const cur = this.state.slide;
+    clearTimeout(this.snap);
+    if (next > 3) next = 1;
+    if (next < 0) {
+      this.setState({ slide: 3, instant: true });
+      requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ slide: 2, instant: false })));
+      return;
+    }
+    if (cur === 3 && next === 1) {
+      this.setState({ slide: 0, instant: true });
+      requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ slide: 1, instant: false })));
+      return;
+    }
+    this.setState({ slide: next, instant: false });
+    if (next === 3) {
+      clearTimeout(this.snap);
+      this.snap = setTimeout(() => this.setState({ slide: 0, instant: true }), 720);
+    }
+  }
+  startAuto() {
+    clearInterval(this.timer);
+    this.timer = setInterval(() => {
+      if (this.state.playing && !this.state.hover) this.go(this.state.slide + 1);
+    }, 5000);
+  }
+  componentWillUnmount() { clearInterval(this.timer); clearTimeout(this.snap); }
+  componentDidMount() {
+    let reduce = false;
+    try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    if (reduce) this.setState({ playing: false, reduce: true });
+    this.startAuto();
+    try {
+      const until = Number(window.localStorage.getItem('comfit_poster_hide_until') || 0);
+      if (Date.now() < until) this.setState({ popup: false });
+    } catch (e) {}
+  }
+  renderVals() {
+    const s = this.state;
+    const demoText = {
+      like: ['관심 상품은 아직 저장되지 않아요', '서비스가 열리면 로그인하면 관심 상품을 모아 볼 수 있습니다.'],
+      alert: ['알림은 아직 쓸 수 없어요', '서비스가 열리면 가격 변동과 체결 알림을 받을 수 있습니다.']
+    };
+    const d = demoText[s.demo] || ['준비 중인 기능입니다', '이 기능은 서비스가 열리면 쓸 수 있습니다.'];
+    const n = 3;
+    return {
+      
+      trackX: (-100 * s.slide) + '%',
+      trackTransition: (s.instant || s.reduce) ? 'none' : 'transform 700ms cubic-bezier(0.22, 0.61, 0.36, 1)',
+      h0: String(s.slide % n !== 0), h1: String(s.slide !== 1), h2: String(s.slide !== 2),
+      slideLabel: (s.slide % n + 1) + ' / ' + n,
+      prev: () => { this.go(this.state.slide - 1); this.startAuto(); },
+      next: () => { this.go(this.state.slide + 1); this.startAuto(); },
+      hoverOn: () => this.setState({ hover: true }),
+      hoverOff: () => { this.setState({ hover: false }); this.startAuto(); },
+      playing: s.playing, paused: !s.playing,
+      playLabel: s.playing ? '자동 넘김 멈춤' : '자동 넘김 재생',
+      togglePlay: () => { this.setState({ playing: !this.state.playing }); this.startAuto(); },
+      popupOpen: s.popup,
+      closePopup: () => this.setState({ popup: false }),
+      hideToday: () => {
+        try {
+          const t = new Date(); t.setHours(24, 0, 0, 0);
+          window.localStorage.setItem('comfit_poster_hide_until', String(t.getTime()));
+        } catch (e) {}
+        this.setState({ popup: false });
+      },
+      demoOpen: !!s.demo, demoTitle: d[0], demoBody: d[1],
+      askLike: () => this.setState({ demo: 'like' }),
+      askAlert: () => this.setState({ demo: 'alert' }),
+      closeDemo: () => this.setState({ demo: '' })
+    };
+  }
+}
+</script>
+<script src="config.js"></script>
+<script src="runtime.js"></script>
+</body>
+</html>
