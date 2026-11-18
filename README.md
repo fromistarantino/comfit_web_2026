@@ -1,7 +1,7 @@
 # COMFIT 웹 사이트
 
-주소: https://fromistarantino.github.io/comfit_web_2026/
-이벤트 참여(광고 연결용): https://fromistarantino.github.io/comfit_web_2026/join.html
+주소: https://comfit.kr/ (도메인 연결 전: https://fromistarantino.github.io/comfit_web_2026/)
+이벤트 참여(광고 연결용): https://comfit.kr/join.html
 
 ## 운영자용 안내
 
