@@ -97,7 +97,7 @@
 <p style="margin: 0; font-size: 13px; line-height: 1.7; color: #52525B;">새로 배포한 프로그램은 다운로드 이력이 쌓이기 전까지 이 창이 뜰 수 있습니다. 반드시 이 사이트의 다운로드 버튼으로 받은 파일인지 확인하세요.</p>
 <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
 <li style="display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 12px; font-weight: 700; color: #71717A;">STEP 1</span><strong style="font-size: 14px;">"추가 정보"를 누릅니다</strong></li>
-<li style="display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 12px; font-weight: 700; color: #71717A;">STEP 2</span><strong style="font-size: 14px;">게시자와 파일 이름을 확인합니다</strong></li>
+<li style="display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 12px; font-weight: 700; color: #71717A;">STEP 2</span><strong style="font-size: 14px;">파일 이름과 SHA-256을 확인합니다 (코드 서명 전이라 게시자는 "알 수 없음"으로 보입니다)</strong></li>
 <li style="display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 12px; font-weight: 700; color: #71717A;">STEP 3</span><strong style="font-size: 14px;">"실행"을 누릅니다</strong></li>
 </ol>
 </section>
@@ -130,7 +130,7 @@
 <h2 id="etc-title" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);">그 밖의 안내</h2>
 <div style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 14px;">지우는 방법</strong><span style="font-size: 13px; line-height: 1.6; color: #52525B;">설정 › 앱 › 설치된 앱에서 COMFIT을 제거합니다. zip 판은 폴더를 지우면 됩니다.</span></div>
 <div style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 14px;">라이선스</strong><span style="font-size: 13px; line-height: 1.6; color: #52525B;"><a href="programterms.html" style="text-decoration: underline;">검진 프로그램 이용약관</a> · <a href="licenses.html" style="text-decoration: underline;">오픈소스 라이선스</a></span></div>
-<div style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 14px;">문제가 생기면</strong><span style="font-size: 13px; line-height: 1.6; color: #52525B;">프로그램의 "문제 보고" 버튼이나 <a href="inquiry.html" style="text-decoration: underline;">문의하기</a>로 기록 파일을 보내 주세요.</span><a href="help.html" style="font-size: 13px; text-decoration: underline;">자주 묻는 질문</a></div>
+<div style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 14px;">문제가 생기면</strong><span style="font-size: 13px; line-height: 1.6; color: #52525B;">프로그램 설정의 "오류 보고서 만들기"로 만든 파일을 <a href="inquiry.html" style="text-decoration: underline;">문의하기</a>로 기록 파일을 보내 주세요.</span><a href="help.html" style="font-size: 13px; text-decoration: underline;">자주 묻는 질문</a></div>
 </section>
 
 <section aria-labelledby="next-title" style="display: flex; flex-direction: column; gap: 12px;">
@@ -201,7 +201,7 @@ class Component extends DCLogic {
     };
     const d = text[s.demo] || text.setup;
     const ask = (k) => () => this.setState({ demo: k });
-    const logs = [['l1', '[사업자 확인 필요: 최신 버전]', '[사업자 확인 필요: 날짜]'], ['l2', '[사업자 확인 필요: 이전 버전]', '[사업자 확인 필요: 날짜]'], ['l3', '[사업자 확인 필요: 이전 버전]', '[사업자 확인 필요: 날짜]']]
+    const logs = [['l1', '1.0.0 (공개 준비 중)', '2026. 11. 22.']]
       .map(([id, ver, date]) => ({ ver, date, open: s.open === id, hint: s.open === id ? '접기' : '보기', toggle: () => this.setState({ open: this.state.open === id ? '' : id }) }));
     return {
       logs,

@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- 원본: comfit3 저장소 web-verify/ (확인 코드는 그쪽에서 고치고 시험한 뒤 이 폴더로 복사) -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; form-action 'none'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
+  <title>COMFIT 결과표 진위 확인</title>
+  <style>
+    :root { --bg:#16171a; --surface:#1f2024; --text:#e8e8ea; --muted:#9a9da4; --ok:#3ddc84; --warn:#f2c94c; --bad:#eb5757; --line:#34373e; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif; }
+    main { max-width:720px; margin:0 auto; padding:24px 16px; }
+    h1 { font-size:20px; margin:0 0 16px; } h1 b { color:var(--ok); }
+    .result { padding:14px 16px; border-radius:6px; background:var(--surface); border:1px solid var(--line); font-weight:600; }
+    .result.ok { border-color:var(--ok); color:var(--ok); } .result.warn { border-color:var(--warn); color:var(--warn); } .result.bad { border-color:var(--bad); color:var(--bad); }
+    section { margin-top:20px; } h2 { font-size:15px; margin:0 0 8px; }
+    table { width:100%; border-collapse:collapse; font-size:14px; } td { padding:6px 4px; border-bottom:1px solid var(--line); vertical-align:top; }
+    dl { display:grid; grid-template-columns:120px 1fr; gap:6px 12px; margin:0; } dt { color:var(--muted); }
+    .note { color:var(--muted); font-size:13px; line-height:1.6; }
+    .scroll { overflow-x:auto; }
+  </style>
+</head>
+<body>
+<main>
+  <h1><b>COMFIT</b> 결과표 진위 확인</h1>
+  <div id="result" class="result">확인하는 중…</div>
+  <div id="details" hidden>
+    <section><h2>결과표 요약</h2>
+      <dl><dt>검진 번호</dt><dd id="rn"></dd><dt>발급 일시</dt><dd id="at"></dd><dt>검진 모드</dt><dd id="mode"></dd><dt>종합 점수</dt><dd id="total"></dd></dl>
+    </section>
+    <section><h2>부품별 점수</h2><div class="scroll"><table id="components"></table></div></section>
+    <section><h2>저장장치 (사용 시간 · 전원 인가 · 총 쓰기량 · 수명 사용률)</h2><div class="scroll"><table id="disks"></table></div></section>
+    <section class="note">
+      <p>받은 결과표(PDF)의 숫자가 이 화면과 같은지 비교하세요.</p>
+      <p><b>증명하는 것:</b> 이 숫자들이 해당 시각에 COMFIT이 발급한 결과와 같고, 발급 뒤에 바뀌지 않았다는 것.</p>
+      <p><b>증명하지 않는 것:</b> 결과표의 PC가 지금 앞에 있는 PC와 같다는 것(모델명과 저장장치 사용 시간을 직접 대조하세요), 검사 이후의 상태, 성능·수명 보증. 측정 자체를 속이려는 시도는 완전히 막을 수 없습니다.</p>
+      <p>이 페이지는 개인정보를 입력받지 않고, 확인 기록을 남기지 않습니다.</p>
+    </section>
+  </div>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
