@@ -41,14 +41,24 @@ window.COMFIT = {
   maxFileMB: 10,
 
   /* ---------- 검진 프로그램 다운로드 ----------
-     프로그램 파일 주소 (예: GitHub Releases, Google Drive 공유 링크 등 https:// 로 시작)
-     비워 두면 다운로드 버튼이 "준비 중"으로 표시됩니다. */
+     autoRelease가 true면 사이트를 배포할 때 이 저장소의 GitHub Releases에서
+     최신 릴리스를 읽어 아래 값(주소·버전·출시일·크기·SHA-256)을 자동으로 채웁니다.
+     새 릴리스를 공개하면 사이트도 자동으로 다시 배포됩니다.
+     방법: docs/프로그램-배포-방법.md
+     릴리스가 아직 없으면 아래에 직접 적은 값이 쓰입니다. */
+  autoRelease: true,
+  // 릴리스에 파일이 여러 개일 때 설치 파일 이름에 들어가는 글자 (비우면 .exe → .msi → .msix → .zip 순서로 고름)
+  releaseAsset: '',
+
+  // 직접 적는 값 (autoRelease가 false이거나 릴리스가 없을 때)
+  // 프로그램 파일 주소 (https:// 로 시작). 비워 두면 다운로드 버튼이 "준비 중"으로 표시됩니다.
   downloadUrl: '',
   programVersion: '',          // 예: 'v0.5.0'
   programDate: '',             // 예: '2026. 11. 19.'
   programSize: '',             // 예: '24 MB'
   programOS: 'Windows 10 이상 (64비트)',
   programSha256: '',           // 파일의 SHA-256 값 (없으면 비워 두세요)
+  releaseNotesUrl: '',         // 변경 내역 페이지 주소 (없으면 비워 두세요)
 
   /* ---------- 연락처·운영자 정보 (모든 페이지 맨 아래에 나옵니다) ---------- */
   contactEmail: '',            // 예: 'help@comfit.kr'  (비우면 표시하지 않음)
@@ -63,6 +73,7 @@ window.COMFIT = {
   c.formEndpoint = safe(c.formEndpoint);
   c.hasDownload = !!c.downloadUrl; c.noDownload = !c.hasDownload;
   c.hasSha = !!c.programSha256;
+  c.releaseNotesUrl = safe(c.releaseNotesUrl); c.hasNotes = c.hasDownload && !!c.releaseNotesUrl;
   c.hasEmail = !!c.contactEmail; c.mailto = c.hasEmail ? 'mailto:' + c.contactEmail : '';
   c.isOpen = !!c.eventOpen; c.isClosed = !c.isOpen;
   c.hasEndpoint = !!c.formEndpoint;
