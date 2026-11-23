@@ -88,7 +88,7 @@
 <h2 id="req-title" style="margin: 0; font-size: 17px; font-weight: 800; line-height: 1.27;">권장 사양</h2>
 <dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); border-top: 1px solid #E4E4E7;">
 <div style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid #F4F4F5; font-size: 13px; margin-right: 24px;"><dt style="color: #71717A;">관리자 권한</dt><dd style="margin: 0; font-weight: 600;">기본 검진은 필요 없음</dd></div>
-<div style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid #F4F4F5; font-size: 13px;"><dt style="color: #71717A;">인터넷</dt><dd style="margin: 0; font-weight: 600;">결과 업로드·업데이트 때만</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid #F4F4F5; font-size: 13px;"><dt style="color: #71717A;">인터넷</dt><dd style="margin: 0; font-weight: 600;">새 버전 확인 때만 (설정에서 끌 수 있음)</dd></div>
 </dl>
 </section>
 
@@ -110,7 +110,6 @@
 <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 1.6; color: #52525B;">
 <li>CPU·메모리·저장장치·그래픽카드에 단계별로 부하를 걸고 반응을 잽니다</li>
 <li>결과표를 내 PC에 저장합니다</li>
-<li>동의한 경우에만 측정값을 서버로 보냅니다</li>
 <li>새 버전이 있는지 확인합니다</li>
 </ul>
 </div>
@@ -118,6 +117,7 @@
 <strong style="font-size: 14px;">하지 않는 일</strong>
 <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; line-height: 1.6; color: #52525B;">
 <li>내 파일과 문서를 읽지 않습니다</li>
+<li>측정값을 서버로 보내지 않습니다 (현재 버전 1.0.0)</li>
 <li>기본 검진에서 전원 설정을 바꾸지 않습니다</li>
 <li>백그라운드에 계속 남아 있지 않습니다</li>
 </ul>
@@ -128,9 +128,9 @@
 
 <section aria-labelledby="etc-title" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
 <h2 id="etc-title" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);">그 밖의 안내</h2>
-<div style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 14px;">지우는 방법</strong><span style="font-size: 13px; line-height: 1.6; color: #52525B;">설정 › 앱 › 설치된 앱에서 COMFIT을 제거합니다. zip 판은 폴더를 지우면 됩니다.</span></div>
+<div style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 14px;">지우는 방법</strong><span style="font-size: 13px; line-height: 1.6; color: #52525B;">설정 › 앱 › 설치된 앱에서 COMFIT을 제거합니다. 검진 기록은 %LOCALAPPDATA%\COMFIT 폴더에 따로 있어, 제거할 때 지울지 묻습니다 (지금 로그인한 계정의 기록만 해당). zip 판은 프로그램 폴더와 이 기록 폴더를 직접 지우면 됩니다.</span></div>
 <div style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 14px;">라이선스</strong><span style="font-size: 13px; line-height: 1.6; color: #52525B;"><a href="programterms.html" style="text-decoration: underline;">검진 프로그램 이용약관</a> · <a href="licenses.html" style="text-decoration: underline;">오픈소스 라이선스</a></span></div>
-<div style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 14px;">문제가 생기면</strong><span style="font-size: 13px; line-height: 1.6; color: #52525B;">프로그램 설정의 "오류 보고서 만들기"로 만든 파일을 <a href="inquiry.html" style="text-decoration: underline;">문의하기</a>로 기록 파일을 보내 주세요.</span><a href="help.html" style="font-size: 13px; text-decoration: underline;">자주 묻는 질문</a></div>
+<div style="border: 1px solid #E4E4E7; border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 6px;"><strong style="font-size: 14px;">문제가 생기면</strong><span style="font-size: 13px; line-height: 1.6; color: #52525B;">프로그램 설정의 "오류 보고서 만들기"로 만든 파일을 <a href="inquiry.html" style="text-decoration: underline;">문의하기</a>로 보내 주세요.</span><a href="help.html" style="font-size: 13px; text-decoration: underline;">자주 묻는 질문</a></div>
 </section>
 
 <section aria-labelledby="next-title" style="display: flex; flex-direction: column; gap: 12px;">
