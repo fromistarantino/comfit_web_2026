@@ -47,6 +47,10 @@ window.COMFIT = {
      방법: docs/프로그램-배포-방법.md
      릴리스가 아직 없으면 아래에 직접 적은 값이 쓰입니다. */
   autoRelease: true,
+  // 정식 배포 전 베타(Releases에서 "Set as a pre-release"로 공개한 것)도 다운로드에 보여 줄지.
+  // true면 정식·베타 중 가장 최근 것이 나오고, 베타면 다운로드 페이지에 "베타" 표시가 붙습니다.
+  // 정식 버전을 공개한 뒤 베타를 숨기려면 false로 바꾸세요.
+  includePrerelease: true,
   // 릴리스에 파일이 여러 개일 때 설치 파일 이름에 들어가는 글자 (비우면 .exe → .msi → .msix → .zip 순서로 고름)
   releaseAsset: '',
 
@@ -59,6 +63,7 @@ window.COMFIT = {
   programOS: 'Windows 10 이상 (64비트)',
   programSha256: '',           // 파일의 SHA-256 값 (없으면 비워 두세요)
   releaseNotesUrl: '',         // 변경 내역 페이지 주소 (없으면 비워 두세요)
+  programPrerelease: false,    // 베타(정식 배포 전) 파일이면 true
 
   /* ---------- 연락처·운영자 정보 (모든 페이지 맨 아래에 나옵니다) ---------- */
   contactEmail: '',            // 예: 'help@comfit.kr'  (비우면 표시하지 않음)
@@ -73,6 +78,7 @@ window.COMFIT = {
   c.formEndpoint = safe(c.formEndpoint);
   c.hasDownload = !!c.downloadUrl; c.noDownload = !c.hasDownload;
   c.hasSha = !!c.programSha256;
+  c.isBeta = c.hasDownload && c.programPrerelease === true;
   c.releaseNotesUrl = safe(c.releaseNotesUrl); c.hasNotes = c.hasDownload && !!c.releaseNotesUrl;
   c.hasEmail = !!c.contactEmail; c.mailto = c.hasEmail ? 'mailto:' + c.contactEmail : '';
   // 처리방침·약관에 쓰는 연락처 (비어 있으면 등록 전이라고 표시)

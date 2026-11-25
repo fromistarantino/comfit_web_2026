@@ -5,8 +5,10 @@
 배포(deploy.py) 다음, 미리 그리기(prerender.js) 전에 실행한다.
 web/config.js 의 autoRelease 가 true일 때만 동작한다.
 
-읽는 것: 이 저장소의 최신 릴리스 (초안·사전 공개(pre-release)는 제외)
-채우는 값: downloadUrl, programVersion, programDate, programSize, programSha256, releaseNotesUrl
+읽는 것: 이 저장소의 최신 릴리스 (초안은 제외)
+  - config.js 의 includePrerelease 가 false면 사전 공개(pre-release, 베타)도 제외
+  - true면 정식·베타 중 가장 최근에 공개한 것 (정식 배포 전 베타를 내려받게 할 때)
+채우는 값: downloadUrl, programVersion, programDate, programSize, programSha256, releaseNotesUrl, programPrerelease
 
 환경 변수
   GITHUB_REPOSITORY  릴리스를 읽을 저장소 (기본: fromistarantino/comfit_web_2026)
@@ -92,9 +94,19 @@ def main():
     if MARKER not in js:
         sys.exit('config.js에서 "아래는 고치지 마세요" 줄을 찾지 못했습니다.')
     repo = os.environ.get('GITHUB_REPOSITORY') or DEFAULT_REPO
+    beta_ok = read_setting(js, 'includePrerelease') is True
     try:
-        with request('https://api.github.com/repos/%s/releases/latest' % repo) as r:
-            rel = json.load(r)
+        if beta_ok:
+            # /releases 는 최근 것부터 온다. 초안을 빼고 가장 최근에 공개한 것 (베타 포함)
+            with request('https://api.github.com/repos/%s/releases?per_page=20' % repo) as r:
+                rels = [x for x in json.load(r) if not x.get('draft')]
+            rels.sort(key=lambda x: x.get('published_at') or x.get('created_at') or '', reverse=True)
+            if not rels:
+                raise urllib.error.HTTPError(None, 404, 'no release', None, None)
+            rel = rels[0]
+        else:
+            with request('https://api.github.com/repos/%s/releases/latest' % repo) as r:
+                rel = json.load(r)
     except urllib.error.HTTPError as e:
         if e.code == 404:
             warn('%s 에 공개된 릴리스가 없습니다. 다운로드 버튼은 config.js 값대로 표시됩니다.' % repo)
@@ -122,13 +134,15 @@ def main():
         'programSize': size_text(asset['size']),
         'programSha256': sha,
         'releaseNotesUrl': rel.get('html_url') or '',
+        'programPrerelease': bool(rel.get('prerelease')),
     }
     block = ('/* ---------- 배포할 때 GitHub 최신 릴리스(%s)에서 자동으로 채운 값 (tools/release.py) ---------- */\n'
              'Object.assign(window.COMFIT, %s);\n\n' % (values['programVersion'], json.dumps(values, ensure_ascii=False, indent=2)))
     js = js.replace(MARKER, block + MARKER, 1)
     with open(path, 'w', encoding='utf-8') as f:
         f.write(js)
-    print('최신 릴리스 %s: %s (%s, %s)' % (values['programVersion'], asset['name'], values['programSize'], values['programDate']))
+    print('최신 릴리스 %s%s: %s (%s, %s)' % (values['programVersion'], ' (베타)' if values['programPrerelease'] else '',
+                                          asset['name'], values['programSize'], values['programDate']))
 
 
 if __name__ == '__main__':
