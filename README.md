@@ -7,12 +7,13 @@
 
 | 하고 싶은 것 | 문서 |
 |---|---|
-| 글·이벤트 기간·경품·다운로드 주소 고치기 | [docs/글-수정-방법.md](docs/글-수정-방법.md) — 대부분 `web/config.js` 한 파일 |
+| 글·이벤트 기간·경품 고치기 | [docs/글-수정-방법.md](docs/글-수정-방법.md) — 대부분 `web/config.js` 한 파일 |
+| 검진 프로그램 새 버전 올리기 (다운로드 페이지 자동 갱신) | [docs/프로그램-배포-방법.md](docs/프로그램-배포-방법.md) — 이 저장소의 Releases에 공개 |
 | 이벤트 참여 내용 받아 보기 (Google 시트) | [docs/이벤트-접수-설정.md](docs/이벤트-접수-설정.md) |
 | 내 도메인 연결 | [docs/도메인-연결.md](docs/도메인-연결.md) — `deploy.json`의 `domain` |
 | 아직 정할 것 목록 | [docs/논의-필요.md](docs/논의-필요.md) |
 
-`main`에 고친 내용을 저장(commit)하면 GitHub Actions가 자동으로 배포합니다 (`.github/workflows/deploy.yml`, 2~3분).
+`main`에 고친 내용을 저장(commit)하거나 새 릴리스를 공개하면 GitHub Actions가 자동으로 배포합니다 (`.github/workflows/deploy.yml`, 2~3분).
 
 ### 지금 사이트 상태
 - 열려 있음: 홈, 검진 안내, 다운로드, 이벤트 안내(`event.html`), **이벤트 참여(`join.html`)**, 고객센터, 약관
@@ -32,7 +33,7 @@
 |---|---|---|
 | `web/` | **PC 웹사이트 전체.** 화면(`index.html` 등 29개 + `404.html`), 공통 스타일 `site.css`, 화면을 그리는 `runtime.js`, 사진·글꼴 `assets/` | 글·사진·PC 배치를 바꿀 때 |
 | `mobile/` | **모바일 전용 스타일** `mobile.css`. 화면 폭 720px 이하에서만 적용 | 휴대폰 화면의 배치·크기만 바꿀 때 |
-| `tools/` | 배포 폴더 만들기(`deploy.py`), 화면 미리 그리기(`prerender.js`), 이벤트 접수 서버 코드(`apps-script/Code.gs`), 캔버스 변환 스크립트(`canvas/`) | - |
+| `tools/` | 배포 폴더 만들기(`deploy.py`), 최신 릴리스 정보 넣기(`release.py`), 화면 미리 그리기(`prerender.js`), 이벤트 접수 서버 코드(`apps-script/Code.gs`), 캔버스 변환 스크립트(`canvas/`) | - |
 
 화면의 글과 구조는 PC와 모바일이 같은 html 파일을 씁니다. 글을 한 번만 고치면 양쪽에 반영됩니다.
 모바일에서만 보이는 요소(SHOP의 필터 버튼, 약관의 접는 목차, 짧은 안내 띠 문구)도 html 안에 있고,
