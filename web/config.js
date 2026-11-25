@@ -64,6 +64,8 @@ window.COMFIT = {
   c.hasDownload = !!c.downloadUrl; c.noDownload = !c.hasDownload;
   c.hasSha = !!c.programSha256;
   c.hasEmail = !!c.contactEmail; c.mailto = c.hasEmail ? 'mailto:' + c.contactEmail : '';
+  // 처리방침·약관에 쓰는 연락처 (비어 있으면 등록 전이라고 표시)
+  c.contactText = c.hasEmail ? c.contactEmail : '연락처 이메일 등록 전 — 공지사항으로 알릴 예정';
   c.isOpen = !!c.eventOpen; c.isClosed = !c.isOpen;
   c.hasEndpoint = !!c.formEndpoint;
   c.prizes = c.prizes || []; c.footerLines = c.footerLines || [];
