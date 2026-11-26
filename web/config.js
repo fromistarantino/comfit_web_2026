@@ -51,7 +51,7 @@ window.COMFIT = {
   programSha256: '',           // 파일의 SHA-256 값 (없으면 비워 두세요)
 
   /* ---------- 연락처·운영자 정보 (모든 페이지 맨 아래에 나옵니다) ---------- */
-  contactEmail: '',            // 예: 'help@comfit.kr'  (비우면 표시하지 않음)
+  contactEmail: 'fromistarantino@gmail.com',  // 문의·개인정보 보호책임자 연락처 (2026-11-26 운영자가 지정, 비우면 표시하지 않음)
   // 맨 아래에 더 적고 싶은 줄 (없으면 비워 둠). 예: '운영 COMFIT 팀 · 개인정보 보호책임자 홍길동'
   footerLines: []
 };
