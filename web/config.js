@@ -41,7 +41,7 @@ window.COMFIT = {
      (https://script.google.com/macros/s/..../exec 형태)
      비워 두면 참여 양식의 제출 버튼이 "접수 준비 중"으로 막힙니다.
      설정 방법: docs/이벤트-접수-설정.md */
-  formEndpoint: '',
+  formEndpoint: 'https://script.google.com/macros/s/AKfycbyPuYkO_61T3xrwzyCuBD-GDGSX6xaPygdi7r-5FlTfcB0G3kdaJhy5vAReUCP5sLhu/exec',
 
   // 첨부 파일 최대 크기(MB). Apps Script 쪽 MAX_FILE_MB와 같게 맞추세요.
   maxFileMB: 10,
