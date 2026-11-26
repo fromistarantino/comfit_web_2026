@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="1만 원 상품권">
+<rect width="800" height="800" fill="#FFFFFF"/>
+<g transform="rotate(-6 400 400)">
+<rect x="130" y="250" width="540" height="310" rx="28" fill="#18181B"/>
+<rect x="130" y="250" width="540" height="310" rx="28" fill="none" stroke="#B6F24B" stroke-width="6"/>
+<line x1="500" y1="270" x2="500" y2="540" stroke="#3F3F46" stroke-width="4" stroke-dasharray="12 12"/>
+<text x="175" y="320" font-family="Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="30" font-weight="700" fill="#B6F24B" letter-spacing="2">GIFT CARD</text>
+<text x="175" y="440" font-family="Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="96" font-weight="900" fill="#FAFAFA">1만 원</text>
+<text x="175" y="505" font-family="Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" font-size="34" font-weight="700" fill="#A1A1AA">상품권</text>
+<circle cx="585" cy="405" r="54" fill="#B6F24B"/>
+<path d="M558 405 l18 18 l36 -38" fill="none" stroke="#09090B" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
