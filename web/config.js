@@ -20,11 +20,15 @@ window.COMFIT = {
   // 접수를 받는 중이면 true, 마감하면 false (false면 참여 양식 대신 "마감" 안내가 나옵니다)
   eventOpen: true,
 
-  // 경품 목록 (이벤트 안내·참여 페이지에 그대로 나옵니다)
+  // 경품 목록 (이벤트 안내 페이지에 사진과 함께 나옵니다)
+  //   rank: 등수, name: 상품 이름, img: 사진 파일 (web/assets 폴더, 없으면 '' 로 비워 두면 사진 없이 표시)
+  //   count: 당첨 인원 (예: '1명'). 비워 두면 표시하지 않습니다.
   prizes: [
-    'MSI 지포스 RTX 5060 벤투스 2X OC V1 D7 8GB',
-    'ESSENCORE KLEVV DDR5-5600 16GB',
-    '컴퓨터 케이스, 쿨러 등'
+    { rank: '1등', name: 'MSI 지포스 RTX 5060 벤투스 2X OC D7 8GB', img: 'assets/prize-1-gpu.webp', count: '' },
+    { rank: '2등', name: 'ESSENCORE KLEVV DDR5-5600 CL46', img: 'assets/prize-2-ram.webp', count: '' },
+    { rank: '3등', name: '3RSYS L600 Quiet 블랙', img: 'assets/prize-3-case.webp', count: '' },
+    { rank: '4등', name: 'CV-620 ARGB CPU 쿨러 블랙', img: 'assets/prize-4-cooler.webp', count: '' },
+    { rank: '5등', name: '1만 원 상품권', img: 'assets/prize-5-voucher.svg', count: '' }
   ],
 
   // 당첨자가 배송 정보를 회신해야 하는 기간(일). 넘기면 당첨 취소·재추첨 (참여 약관에 나옵니다)
@@ -91,5 +95,10 @@ window.COMFIT = {
   c.contactText = c.hasEmail ? c.contactEmail : '연락처 이메일 등록 전 — 공지사항으로 알릴 예정';
   c.isOpen = !!c.eventOpen; c.isClosed = !c.isOpen;
   c.hasEndpoint = !!c.formEndpoint;
-  c.prizes = c.prizes || []; c.footerLines = c.footerLines || [];
+  c.prizes = (c.prizes || []).map(function (p) {
+    if (typeof p === 'string') p = { name: p };
+    return { rank: p.rank || '', name: p.name || '', img: p.img || '', count: p.count || '',
+      hasRank: !!p.rank, hasImg: !!p.img, noImg: !p.img, hasCount: !!p.count };
+  });
+  c.footerLines = c.footerLines || [];
 })(window.COMFIT);

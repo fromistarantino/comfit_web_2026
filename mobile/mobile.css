@@ -26,6 +26,9 @@
   footer nav { gap:8px !important; }
   main { padding-top:24px !important; }
 
+  /* 쓰는 화면: event — 경품 카드 두 줄씩 */
+  .cf-prizes { grid-template-columns:repeat(2, minmax(0, 1fr)) !important; gap:8px !important; }
+
   /* 쓰는 화면: index */
   .cf-gift { flex:0 1 46%; }
   .cf-frog { flex:0 1 54%; }
