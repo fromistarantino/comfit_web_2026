@@ -80,7 +80,7 @@ window.COMFIT = {
      쿠키를 쓰지 않고 방문자를 개인별로 식별하지 않습니다.
      Cloudflare에서 받은 토큰(영문·숫자 32자)을 따옴표 안에 넣으세요. 비워 두면 통계를 쓰지 않습니다.
      방법: docs/방문-통계-설정.md */
-  analyticsToken: '',
+  analyticsToken: '21c9062d8fac48a397307bd0ab8da382',
 
   /* ---------- 연락처·운영자 정보 (모든 페이지 맨 아래에 나옵니다) ---------- */
   contactEmail: 'fromistarantino@gmail.com',  // 문의·개인정보 보호책임자 연락처 (2026-11-26 운영자가 지정, 비우면 표시하지 않음)
@@ -105,7 +105,7 @@ window.COMFIT = {
   c.hasAnalytics = !!c.analyticsToken; c.noAnalytics = !c.hasAnalytics;
   if (c.hasAnalytics && !navigator.webdriver && !/^(localhost|127\.0\.0\.1)$/.test(location.hostname) && location.protocol === 'https:') {
     var sc = document.createElement('script');
-    sc.defer = true; sc.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    sc.type = 'module'; sc.src = 'https://static.cloudflareinsights.com/beacon.min.js';   // Cloudflare가 준 코드와 같은 방식
     sc.setAttribute('data-cf-beacon', JSON.stringify({ token: c.analyticsToken }));
     document.head.appendChild(sc);
   }
