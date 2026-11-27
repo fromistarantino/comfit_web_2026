@@ -75,6 +75,13 @@ window.COMFIT = {
   releaseNotesUrl: '',         // 변경 내역 페이지 주소 (없으면 비워 두세요)
   programPrerelease: false,    // 베타(정식 배포 전) 파일이면 true
 
+  /* ---------- 방문 통계 (Cloudflare Web Analytics) ----------
+     사이트에 몇 명이 들어왔는지, 어느 페이지를 봤는지, 어디서 왔는지(인스타그램·검색 등)를 봅니다.
+     쿠키를 쓰지 않고 방문자를 개인별로 식별하지 않습니다.
+     Cloudflare에서 받은 토큰(영문·숫자 32자)을 따옴표 안에 넣으세요. 비워 두면 통계를 쓰지 않습니다.
+     방법: docs/방문-통계-설정.md */
+  analyticsToken: '',
+
   /* ---------- 연락처·운영자 정보 (모든 페이지 맨 아래에 나옵니다) ---------- */
   contactEmail: 'fromistarantino@gmail.com',  // 문의·개인정보 보호책임자 연락처 (2026-11-26 운영자가 지정, 비우면 표시하지 않음)
   // 맨 아래에 더 적고 싶은 줄 (없으면 비워 둠). 예: '운영 COMFIT 팀 · 개인정보 보호책임자 홍길동'
@@ -93,6 +100,15 @@ window.COMFIT = {
   c.hasEmail = !!c.contactEmail; c.mailto = c.hasEmail ? 'mailto:' + c.contactEmail : '';
   // 처리방침·약관에 쓰는 연락처 (비어 있으면 등록 전이라고 표시)
   c.contactText = c.hasEmail ? c.contactEmail : '연락처 이메일 등록 전 — 공지사항으로 알릴 예정';
+  // 방문 통계: 토큰이 있을 때만, 실제 사이트에서만 불러온다 (내 PC 미리 보기·배포 때 미리 그리기는 세지 않음)
+  c.analyticsToken = /^[0-9a-f]{32}$/i.test(String(c.analyticsToken || '').trim()) ? String(c.analyticsToken).trim() : '';
+  c.hasAnalytics = !!c.analyticsToken; c.noAnalytics = !c.hasAnalytics;
+  if (c.hasAnalytics && !navigator.webdriver && !/^(localhost|127\.0\.0\.1)$/.test(location.hostname) && location.protocol === 'https:') {
+    var sc = document.createElement('script');
+    sc.defer = true; sc.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    sc.setAttribute('data-cf-beacon', JSON.stringify({ token: c.analyticsToken }));
+    document.head.appendChild(sc);
+  }
   c.isOpen = !!c.eventOpen; c.isClosed = !c.isOpen;
   c.hasEndpoint = !!c.formEndpoint;
   c.prizes = (c.prizes || []).map(function (p) {
