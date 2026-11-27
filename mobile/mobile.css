@@ -1,0 +1,47 @@
+/* COMFIT 모바일 전용 스타일: 화면 폭 720px 이하에서만 적용됩니다.
+   이 파일을 빼고 배포하면 PC 화면만 나갑니다 (tools/deploy.py pc).
+   PC 화면의 style 속성을 덮어써야 해서 !important 가 붙은 규칙이 있습니다. */
+
+@media (max-width: 720px) {
+
+  /* 모든 화면 공통: 안내 띠, 머리글·메뉴, 여백, 푸터 */
+  .cf-hd { padding:8px 16px 0; gap:0 8px; }
+  .cf-ic { margin-left:auto; }
+  .cf-nav { order:3; flex-basis:100%; margin-left:0; gap:22px; font-size:15px; overflow-x:auto; }
+  .cf-top { padding:6px 16px !important; }
+  .cf-pad { padding-left:16px !important; padding-right:16px !important; }
+  .cf-long { display:none; }
+  .cf-short { display:inline; }
+  .cf-m-only { display:inline-flex !important; }
+  .cf-grid2 { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:24px 10px !important; }
+  .cf-filter { display:none !important; }
+  .cf-filter.cf-open { display:flex !important; }
+  .cf-rownav { flex-direction:row !important; flex-wrap:nowrap !important; overflow-x:auto; gap:18px !important; align-items:center !important; white-space:nowrap; padding-bottom:6px; }
+  .cf-rownav > * { flex:none !important; }
+  .cf-rownav > strong,.cf-rownav > a[role=button] { font-size:17px !important; }
+  .cf-rownav > div { flex-direction:row !important; gap:18px !important; padding:0 !important; border:0 !important; align-items:center; }
+  .cf-toc-d { display:none !important; }
+  .cf-toc-m { display:block; }
+  footer .cf-pad { padding-top:24px !important; padding-bottom:32px !important; gap:16px !important; }
+  footer nav { gap:8px !important; }
+  main { padding-top:24px !important; }
+
+  /* 쓰는 화면: join — 경품 카드를 옆으로 넘겨 보기 */
+  .cf-jprizes { display:flex !important; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:4px !important; }
+  .cf-jprizes > li { flex:0 0 132px; scroll-snap-align:start; }
+
+  /* 쓰는 화면: event — 경품 카드 두 줄씩 */
+  .cf-prizes { grid-template-columns:repeat(2, minmax(0, 1fr)) !important; gap:8px !important; }
+
+  /* 쓰는 화면: index */
+  .cf-gift { flex:0 1 46%; }
+  .cf-frog { flex:0 1 54%; }
+  .cf-frog > span { white-space:normal; font-size:13px !important; padding:8px 12px !important; text-align:center; }
+  .cf-frog img { height:auto !important; width:100% !important; max-height:230px; }
+  .cf-hero-r,.cf-hero-pad { padding-bottom:60px; }
+
+  /* 쓰는 화면: result */
+  .cf-rg { grid-template-columns:minmax(0,1fr) auto !important; }
+  .cf-rg > :nth-child(3) { grid-column:1 / -1; }
+
+}
